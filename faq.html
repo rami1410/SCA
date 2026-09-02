@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שאלות נפוצות, המלצות ועדכונים | תחרות SCA</title>
+    <meta name="description" content="תשובות לכל השאלות הנפוצות על תחרות SCA: תקציב גפ''ן STEM, חוקי הגביעים, פלטפורמות נתמכות והמלצות מורים ומאמנים.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/components.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <div id="navbar-placeholder"></div>
+
+    <section class="bg-slate-900 text-white py-12 px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-4">שאלות נפוצות ועדכונים</h1>
+        <p class="text-gray-300 text-lg">כל מה שצריך לדעת על התחרות, המימון וההכשרה.</p>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="max-w-4xl mx-auto py-12 px-6">
+        <h2 class="text-2xl font-bold mb-6 text-slate-800">שאלות ותשובות</h2>
+        <div class="space-y-4">
+            
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-5 text-right font-bold text-lg flex justify-between items-center hover:bg-gray-50">
+                    <span>איך משלמים עבור התחרות דרך מערכת גפ"ן?</span>
+                    <span class="faq-icon text-xl text-blue-600 font-bold">+</span>
+                </button>
+                <div class="faq-content hidden p-5 pt-0 text-gray-600 border-t border-gray-100">
+                    התחרות מאושרת לשימוש בתקציב STEM במערכת גפ"ן. לאחר מילוי הטופס באתר, נציג רשמי מטעם הנהלת התחרות יקשר אתכם להוצאת הזמנת רכש מסודרת.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-5 text-right font-bold text-lg flex justify-between items-center hover:bg-gray-50">
+                    <span>האם מותר להשתתף עם רובוטים קיים של בית הספר?</span>
+                    <span class="faq-icon text-xl text-blue-600 font-bold">+</span>
+                </button>
+                <div class="faq-content hidden p-5 pt-0 text-gray-600 border-t border-gray-100">
+                    בהחלט! התחרות תומכת במגוון פלטפורמות פתוחות כולל LEGO SPIKE, Micro:bit ו-Arduino. אין חובה לרכוש רובוט חדש.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-5 text-right font-bold text-lg flex justify-between items-center hover:bg-gray-50">
+                    <span>מהו חוק "גביע אחד בלבד לכל קבוצה"?</span>
+                    <span class="faq-icon text-xl text-blue-600 font-bold">+</span>
+                </button>
+                <div class="faq-content hidden p-5 pt-0 text-gray-600 border-t border-gray-100">
+                    כל קבוצה יכולה לזכות בגביע ייעודי אחד בלבד לפי המשימה שאותה הציבה כתרגול מרכזי. מודל זה מבטיח חלוקת פרסים שיוויונית והזדמנות אמיתית לכל נבחרת להבריק.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-white py-12 px-6 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8">מאמנים ומורים מספרים</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">"השילוב של אסטרטגיה ובחירת משימה נתן לתלמידים שלי ביטחון עצמי אדיר. הם לא היו צריכים להתחרות מול תקציבים בלתי מוגבלים."</p>
+                    <span class="font-bold text-blue-600 block">- רכזת רובוטיקה, אזור הצפון</span>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">"השילוב של רחפנים ורובוטים בליגת Ultra SCA פשוט הריים את כל מגמת הטכנולוגיה בבית הספר שלנו."</p>
+                    <span class="font-bold text-blue-600 block">- מורה למדעים, מרכז הארץ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.innerText = '-';
+            } else {
+                content.classList.add('hidden');
+                icon.innerText = '+';
+            }
+        }
+    </script>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>
