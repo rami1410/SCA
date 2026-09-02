@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה ושריון משטח | תחרות SCA Smart City AI</title>
+    <meta name="description" content="טופס הרשמה רשמי לתחרות הרובוטיקה והרחפנים SCA. שריון משטח לתחרות ב-1,500 ₪. מאושר גפ''ן STEM.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/components.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <div id="navbar-placeholder"></div>
+
+    <section class="bg-slate-900 text-white py-12 px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-4">טופס הרשמה ושריון משטח</h1>
+        <p class="text-gray-300 text-lg max-w-2xl mx-auto">מלאו את הפרטים ונציג הנהלת התחרות יחזור אליכם לתיאום מוקד, תאריך והסדרת תשלום (אשראי / גפ"ן STEM).</p>
+    </section>
+
+    <section class="max-w-3xl mx-auto py-12 px-6">
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+            
+            <form action="https://formspree.io/f/rami@robotix.co.il" method="POST" class="space-y-6">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block font-bold mb-2 text-sm">שם מלא של איש הקשר *</label>
+                        <input type="text" name="full_name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-sm">טלפון להתקשרות *</label>
+                        <input type="tel" name="phone" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block font-bold mb-2 text-sm">אימייל *</label>
+                        <input type="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-sm">סמל מוסד / שם רשות או קבוצה</label>
+                        <input type="text" name="institution_code" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block font-bold mb-2 text-sm">בחירת ליגה וגילאים *</label>
+                        <select name="league" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option value="SCA Elementary (ג-ו)">SCA ליסודי (כיתות ג'-ו')</option>
+                            <option value="Ultra SCA (ז-ט)">Ultra SCA למתקדמים (כיתות ז'-ט')</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-sm">מוקד תחרות מועדף *</label>
+                        <select name="preferred_location" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option value="סכנין (עברית/ערבית)">סכנין (שיפוט עברית/ערבית)</option>
+                            <option value="פתח תקווה (עברית/ערבית)">פתח תקווה (שיפוט עברית/ערבית)</option>
+                            <option value="חיפה (עברית)">חיפה (שיפוט עברית)</option>
+                            <option value="באר שבע (עברית)">באר שבע (שיפוט עברית)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-4 rounded-xl border border-gray-200">
+                    <div>
+                        <label class="block font-bold mb-2 text-xs">האם יש כבר רובוט?</label>
+                        <select name="has_robot" class="w-full p-2 text-sm border rounded-lg">
+                            <option value="כן">כן</option>
+                            <option value="לא">לא</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-xs">שנה ראשונה בליגה?</label>
+                        <select name="first_year" class="w-full p-2 text-sm border rounded-lg">
+                            <option value="כן">כן</option>
+                            <option value="לא">לא</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-xs">נדרשת הכשרה למאמן?</label>
+                        <select name="needs_training" class="w-full p-2 text-sm border rounded-lg">
+                            <option value="כן">כן</option>
+                            <option value="לא">לא</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-xl border border-blue-200 text-sm text-blue-900">
+                    <i class="fas fa-info-circle ml-2"></i>
+                    שריון משטח התחרות וההרשמה מותנים בתשלום דמי רישום ע"ס 1,500 ₪ (ניתן לסליקה באשראי או דרך מערכת גפ"ן/הזמנת רכש מוסדית).
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition text-lg">
+                    שליחת הרשמה לשריון מקום
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>
