@@ -82,10 +82,8 @@
                 <a href="#faq" class="hover:text-blue-600 transition" data-i18n="navFaq">שאלות נפוצות</a>
             </nav>
 
-            <!-- Language Dropdown (Google Colors) & Action CTA -->
+            <!-- Language Dropdown & Action CTA -->
             <div class="flex items-center gap-3">
-                
-                <!-- Google Styled Language Dropdown -->
                 <div class="relative inline-block text-left" id="lang-dropdown-wrapper">
                     <button onclick="toggleLangDropdown(event)" class="flex items-center gap-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 px-3 py-2 rounded-xl text-xs font-bold transition">
                         <i class="fas fa-globe text-slate-500"></i>
@@ -126,49 +124,61 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="relative bg-gradient-to-b from-blue-50/50 via-white to-white pt-12 pb-20 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
-        <div class="max-w-5xl mx-auto">
+    <!-- Hero Section with Background Video -->
+    <section id="hero" class="relative bg-slate-950 text-white pt-20 pb-28 px-4 sm:px-6 lg:px-8 text-center overflow-hidden min-h-[85vh] flex items-center justify-center">
+        
+        <!-- Background Video with Loop & Controls Hidden -->
+        <div class="absolute inset-0 overflow-hidden z-0 pointer-events-none">
+            <iframe class="w-full h-full scale-150 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover opacity-50" 
+                    src="https://www.youtube.com/embed/0x5mf8BUJZY?autoplay=1&mute=1&loop=1&playlist=0x5mf8BUJZY&controls=0&showinfo=0&autohide=1&modestbranding=1" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/75 to-slate-950 z-10"></div>
+
+        <!-- Content Overlay -->
+        <div class="max-w-5xl mx-auto relative z-20">
             
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100/60 text-blue-800 text-sm font-semibold mb-6">
-                <i class="fas fa-trophy text-amber-500"></i>
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 backdrop-blur border border-blue-400/30 text-amber-200 text-sm font-semibold mb-8 shadow-xl">
+                <i class="fas fa-trophy text-amber-300"></i>
                 <span data-i18n="heroBadge">תחרות הרובוטיקה והרחפנים הבינלאומית מבית חותם חיים</span>
             </div>
 
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6" data-i18n="heroTitle">
-                בחירה חכמה. <span class="text-blue-600">ניצחון גדול.</span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6 drop-shadow-lg" data-i18n="heroTitle">
+                בחירה חכמה. <span class="text-amber-300">ניצחון גדול.</span>
             </h1>
 
-            <p class="text-lg sm:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 font-normal leading-relaxed" data-i18n="heroSubtitle">
+            <p class="text-lg sm:text-2xl text-blue-100 max-w-3xl mx-auto mb-10 font-normal leading-relaxed drop-shadow" data-i18n="heroSubtitle">
                 9 משימות עיר חכמה, 9 גביעים נפרדים. חוק ברזל אסטרטגי אחד: גביע אחד בלבד לכל קבוצה. שילוב פריצת דרך של רובוטים קרקעיים ורחפנים.
             </p>
 
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-                <a href="#register" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-blue-500/25 transition" data-i18n="heroCtaRegister">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-14">
+                <a href="#register" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-lg px-8 py-4 rounded-xl shadow-xl shadow-blue-600/30 transition border border-blue-400/30" data-i18n="heroCtaRegister">
                     הרשמה ושריון משטח (1,500 ₪)
                 </a>
-                <a href="#missions" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-lg px-8 py-4 rounded-xl transition" data-i18n="heroCtaMap">
+                <a href="#missions" class="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 backdrop-blur text-blue-200 font-bold text-lg px-8 py-4 rounded-xl border border-slate-700 transition" data-i18n="heroCtaMap">
                     למפת 9 המשימות
                 </a>
             </div>
 
-            <!-- Stats Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-100">
-                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="text-2xl font-black text-blue-600">15+</div>
-                    <div class="text-xs font-semibold text-slate-500" data-i18n="statTrophies">גביעים והוקרות</div>
+            <!-- Glassmorphism Stats Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/80">
+                <div class="p-4 rounded-xl bg-slate-900/70 backdrop-blur border border-slate-800/80">
+                    <div class="text-2xl font-black text-amber-300">15+</div>
+                    <div class="text-xs font-semibold text-slate-300" data-i18n="statTrophies">גביעים והוקרות</div>
                 </div>
-                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="text-2xl font-black text-blue-600">4</div>
-                    <div class="text-xs font-semibold text-slate-500" data-i18n="statLocations">סכנין, חיפה, פ"ת, ב"ש</div>
+                <div class="p-4 rounded-xl bg-slate-900/70 backdrop-blur border border-slate-800/80">
+                    <div class="text-2xl font-black text-blue-300">4</div>
+                    <div class="text-xs font-semibold text-slate-300" data-i18n="statLocations">סכנין, חיפה, פ"ת, ב"ש</div>
                 </div>
-                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="text-2xl font-black text-blue-600">STEM</div>
-                    <div class="text-xs font-semibold text-slate-500" data-i18n="statGafen">מאושר תקציב גפ"ן</div>
+                <div class="p-4 rounded-xl bg-slate-900/70 backdrop-blur border border-slate-800/80">
+                    <div class="text-2xl font-black text-amber-300">STEM</div>
+                    <div class="text-xs font-semibold text-slate-300" data-i18n="statGafen">מאושר תקציב גפ"ן</div>
                 </div>
-                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="text-2xl font-black text-blue-600">3</div>
-                    <div class="text-xs font-semibold text-slate-500" data-i18n="statLang">שיפוט בעברית וערבית</div>
+                <div class="p-4 rounded-xl bg-slate-900/70 backdrop-blur border border-slate-800/80">
+                    <div class="text-2xl font-black text-blue-300">3</div>
+                    <div class="text-xs font-semibold text-slate-300" data-i18n="statLang">שיפוט בעברית וערבית</div>
                 </div>
             </div>
 
@@ -443,6 +453,21 @@
                         התשלום מכסה את השתתפות הנבחרת, קבלת משטח העיר החכמה הפיזי לאימונים בבית הספר, וגישה מלאה לחומרי העזר.
                     </div>
                 </div>
+
+                <!-- New Question Q3 with Embedded Video -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <button onclick="toggleAccordion(this)" class="w-full p-6 text-right font-bold text-slate-900 flex justify-between items-center">
+                        <span data-i18n="q3">איזו משימה כדאי לנו לעשות?</span>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                    </button>
+                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-50 pt-4 space-y-4">
+                        <p data-i18n="a3">כל קבוצה צריכה לשאוף להצליח את המשימה עם המספר הגבוה ביותר, אבל לפעמים שווה ללכת על משימה בטוחה, עדיף ציפור אחת ביד מאשר שתיים על העץ, צפו בסרטון הסבר:</p>
+                        <div class="aspect-video w-full max-w-xl mx-auto rounded-xl overflow-hidden shadow-lg border border-slate-200">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/QxYadhtA9uA" title="איזו משימה לבחור - סרטון הסבר" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -548,7 +573,7 @@
                 navFaq: "שאלות נפוצות",
                 navRegisterBtn: "הרשמה ותשלום",
                 heroBadge: "תחרות הרובוטיקה והרחפנים הבינלאומית מבית חותם חיים",
-                heroTitle: "בחירה חכמה. <span class=\"text-blue-600\">ניצחון גדול.</span>",
+                heroTitle: "בחירה חכמה. <span class=\"text-amber-300\">ניצחון גדול.</span>",
                 heroSubtitle: "9 משימות עיר חכמה, 9 גביעים נפרדים. חוק ברזל אסטרטגי אחד: גביע אחד בלבד לכל קבוצה. שילוב פריצת דרך של רובוטים קרקעיים ורחפנים.",
                 heroCtaRegister: "הרשמה ושריון משטח (1,500 ₪)",
                 heroCtaMap: "למפת 9 המשימות",
@@ -612,6 +637,8 @@
                 a1: "תחרות SCA מאושרת במערכת גפ\"ן תחת תוכנית STEM. לאחר מילוי הטופס באתר, נציג הנהלת התחרות ייצור אתכם קשר להנפקת הזמנת רכש מסודרת.",
                 q2: "מה כולל תשלום ה-1,500 ₪?",
                 a2: "התשלום מכסה את השתתפות הנבחרת, קבלת משטח העיר החכמה הפיזי לאימונים בבית הספר, וגישה מלאה לחומרי העזר.",
+                q3: "איזו משימה כדאי לנו לעשות?",
+                a3: "כל קבוצה צריכה לשאוף להצליח את המשימה עם המספר הגבוה ביותר, אבל לפעמים שווה ללכת על משימה בטוחה, עדיף ציפור אחת ביד מאשר שתיים על העץ, צפו בסרטון הסבר:",
                 regTitle: "הרשמה ושריון משטח",
                 regSub: "מלאו את הפרטים ונציג חותם חיים יחזור אליכם לתיאום",
                 lblContact: "שם איש קשר / מורה *",
@@ -640,7 +667,7 @@
                 navFaq: "الأسئلة الشائعة",
                 navRegisterBtn: "التسجيل والدفع",
                 heroBadge: "مسابقة الروبوتات والطائرات المسيرة الدولية من حوتام حاييم",
-                heroTitle: "إختيار ذكي. <span class=\"text-blue-600\">فوز كبير.</span>",
+                heroTitle: "إختيار ذكي. <span class=\"text-amber-300\">فوز كبير.</span>",
                 heroSubtitle: "9 مهام للمدينة الذكية، 9 كؤوس منفصلة. قانون استراتيجي صارم: كأس واحد فقط لكل فريق. دمج بين الروبوتات والطائرات المسيرة.",
                 heroCtaRegister: "التسجيل وحجز الميدان (1,500 ش.ج)",
                 heroCtaMap: "خريطة المهام التسع",
@@ -704,6 +731,8 @@
                 a1: "مسابقة SCA معتمدة في نظام جيفين تحت برنامج STEM. بعد تعبئة النموذج، سيتواصل معكم ممثل الإدارة.",
                 q2: "ماذا يشمل مبلغ 1,500 ش.ج؟",
                 a2: "يغطي المبلغ مشاركة الفريق، الحصول على ميدان التدريب الفعلي، والوصول الكامل للمواد التعليمية.",
+                q3: "أي مهمة ينبغي علينا اختيارها؟",
+                a3: "يجب على كل فريق السعي للنجاح في المهمة ذات الرقم الأعلى، ولكن في بعض الأحيان يكون من الأفضل اختيار مهمة آمنة (عصفور في اليد خير من عشرة على الشجرة). شاهد فيديو الشرح:",
                 regTitle: "التسجيل وحجز الميدان",
                 regSub: "قم بتعبئة التفاصيل وسيتواصل معك ممثلنا للتنسيق",
                 lblContact: "اسم المعلم / جهة التواصل *",
@@ -732,7 +761,7 @@
                 navFaq: "FAQ",
                 navRegisterBtn: "Register & Pay",
                 heroBadge: "International Robotics & Drone Competition by Hotem Haim",
-                heroTitle: "Smart Choice. <span class=\"text-blue-600\">Big Win.</span>",
+                heroTitle: "Smart Choice. <span class=\"text-amber-300\">Big Win.</span>",
                 heroSubtitle: "9 Smart City missions, 9 separate trophies. One strategic rule: 1 trophy per team. Breakthrough combination of ground robots & drones.",
                 heroCtaRegister: "Register & Reserve Mat (1,500 ILS)",
                 heroCtaMap: "View 9 Missions Map",
@@ -796,6 +825,8 @@
                 a1: "SCA Competition is approved in Gafen under the STEM program. Our team will assist with purchase orders.",
                 q2: "What does the 1,500 ILS fee cover?",
                 a2: "It covers team registration, physical mat delivery, and full learning portal access.",
+                q3: "Which mission should we choose?",
+                a3: "Every team should aim for the highest-numbered mission, but sometimes choosing a safe option is wiser—a bird in the hand is worth two in the bush. Watch the explanation video:",
                 regTitle: "Registration & Mat Reservation",
                 regSub: "Fill in the details and our representative will get back to you",
                 lblContact: "Contact Name / Teacher *",
