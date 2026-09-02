@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCA International Smart City AI - תחרות הרובוטיקה והרחפנים</title>
-    <meta name="description" content="תחרות הרובוטיקה והרחפנים הבינלאומית מבית חותם חיים. 9 משימות, 9 גביעים, מודל אסטרטגי יחידני ומאושר גפ''ן STEM.">
+    
+    <!-- Advanced SEO & Competitor Targeting -->
+    <title>SCA International Smart City AI - תחרות הרובוטיקה והרחפנים | החלופה המובילה לתחרות פירסט (FIRST)</title>
+    <meta name="description" content="תחרות הרובוטיקה והרחפנים הבינלאומית SCA מבית חותם חיים. החלופה הנגישה והמתקדמת לתחרויות פירסט (FIRST FLL/FRC) ו-WRO. 9 משימות, 9 גביעים, מאושר גפ''ן STEM.">
+    <meta name="keywords" content="תחרות רובוטיקה, תחרות פירסט, FIRST Israel, FLL, FRC, FTC, WRO, World Robot Olympiad, רובוטיקה גפן, תחרות רובוטיקה יסודי, תחרות רחפנים, مسابقة روبوتكس, مسابقة فرست, FIRST Lego League alternative, VEX Robotics Israel, חותם חיים, SCA Competition, STEM גפן">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph for Social & AI Crawlers -->
+    <meta property="og:title" content="תחרות הרובוטיקה והרחפנים SCA - החלופה הנגישה לתחרות פירסט">
+    <meta property="og:description" content="9 משימות עיר חכמה, 9 גביעים, מודל אסטרטגי של גביע אחד לכל קבוצה. מאושר גפ''ן STEM.">
+    <meta property="og:image" content="https://i.postimg.cc/zvZc5bDF/Screenshot-2026-09-02-230843.png">
+    <meta property="og:type" content="website">
+
+    <!-- JSON-LD Schema for Google & AI Engine Optimization (GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalEvent",
+          "name": "SCA International Smart City AI Competition",
+          "alternateName": ["תחרות רובוטיקה SCA", "אלטרנטיבה לתחרות פירסט FLL", "مسابقة روبوتكس SCA"],
+          "description": "תחרות רובוטיקה ורחפנים ארצית ובינלאומית לתלמידי יסודי וחטיבת ביניים. מודל אסטרטגי יחידני ומאושר גפ''ן STEM.",
+          "organizer": {
+            "@type": "Organization",
+            "name": "חותם חיים בע''מ",
+            "url": "https://robotix.co.il",
+            "email": "rami@robotix.co.il"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "1500",
+            "priceCurrency": "ILS",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.postimg.cc/gjFTdXcq/Screenshot-2026-09-02-230833.png">
@@ -19,7 +56,7 @@
         }
     </style>
 </head>
-<body class="bg-white text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white">
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white" onclick="closeLangDropdown(event)">
 
     <!-- Sticky Navbar -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
@@ -31,28 +68,45 @@
                     <img src="https://i.postimg.cc/zvZc5bDF/Screenshot-2026-09-02-230843.png" alt="SCA Logo" class="h-12 w-auto object-contain">
                 </a>
                 <span class="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                    <i class="fas fa-check-circle ml-1.5"></i> מאושר גפ"ן (STEM)
+                    <i class="fas fa-check-circle ml-1.5"></i> <span data-i18n="gafenBadge">מאושר גפ"ן (STEM)</span>
                 </span>
             </div>
 
             <!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center gap-7 font-medium text-slate-700 text-sm">
-                <a href="#about" class="hover:text-blue-600 transition">אודות</a>
-                <a href="#missions" class="hover:text-blue-600 transition">9 המשימות</a>
-                <a href="#leagues" class="hover:text-blue-600 transition">הליגות</a>
-                <a href="#timeline" class="hover:text-blue-600 transition">לוח זמנים</a>
-                <a href="#gallery" class="hover:text-blue-600 transition">גלריה וחומרים</a>
-                <a href="#faq" class="hover:text-blue-600 transition">שאלות נפוצות</a>
+                <a href="#about" class="hover:text-blue-600 transition" data-i18n="navAbout">אודות</a>
+                <a href="#missions" class="hover:text-blue-600 transition" data-i18n="navMissions">9 המשימות</a>
+                <a href="#leagues" class="hover:text-blue-600 transition" data-i18n="navLeagues">הליגות</a>
+                <a href="#timeline" class="hover:text-blue-600 transition" data-i18n="navTimeline">לוח זמנים</a>
+                <a href="#gallery" class="hover:text-blue-600 transition" data-i18n="navGallery">גלריה וחומרים</a>
+                <a href="#faq" class="hover:text-blue-600 transition" data-i18n="navFaq">שאלות נפוצות</a>
             </nav>
 
-            <!-- Language & Action CTA -->
+            <!-- Language Dropdown (Google Colors) & Action CTA -->
             <div class="flex items-center gap-3">
-                <div class="text-xs font-bold flex gap-1 text-slate-500 border-l border-slate-200 pl-3">
-                    <button onclick="setLanguage('he')" class="hover:text-blue-600 text-blue-600">HE</button>|
-                    <button onclick="setLanguage('ar')" class="hover:text-blue-600">AR</button>|
-                    <button onclick="setLanguage('en')" class="hover:text-blue-600">EN</button>
+                
+                <!-- Google Styled Language Dropdown -->
+                <div class="relative inline-block text-left" id="lang-dropdown-wrapper">
+                    <button onclick="toggleLangDropdown(event)" class="flex items-center gap-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 px-3 py-2 rounded-xl text-xs font-bold transition">
+                        <i class="fas fa-globe text-slate-500"></i>
+                        <span id="current-lang-text" class="text-slate-800">עברית</span>
+                        <i class="fas fa-chevron-down text-[10px] text-slate-400"></i>
+                    </button>
+                    
+                    <div id="lang-dropdown" class="hidden absolute left-0 mt-2 w-36 bg-white border border-slate-100 rounded-xl shadow-xl z-50 py-1.5 font-bold text-xs">
+                        <button onclick="setLanguage('he')" class="w-full text-right px-4 py-2 hover:bg-slate-50 text-[#4285F4] flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#4285F4]"></span> עברית
+                        </button>
+                        <button onclick="setLanguage('ar')" class="w-full text-right px-4 py-2 hover:bg-slate-50 text-[#34A853] flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#34A853]"></span> عربي
+                        </button>
+                        <button onclick="setLanguage('en')" class="w-full text-left px-4 py-2 hover:bg-slate-50 text-[#EA4335] flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#EA4335]"></span> English
+                        </button>
+                    </div>
                 </div>
-                <a href="#register" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-md shadow-blue-500/20 transition duration-200">
+
+                <a href="#register" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm shadow-md shadow-blue-500/20 transition duration-200" data-i18n="navRegisterBtn">
                     הרשמה ותשלום
                 </a>
                 <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-700 p-2 text-xl">
@@ -63,12 +117,12 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-3 font-medium text-slate-700">
-            <a href="#about" onclick="toggleMobileMenu()" class="block hover:text-blue-600">אודות התחרות</a>
-            <a href="#missions" onclick="toggleMobileMenu()" class="block hover:text-blue-600">9 המשימות והגביעים</a>
-            <a href="#leagues" onclick="toggleMobileMenu()" class="block hover:text-blue-600">מסלולי הליגות</a>
-            <a href="#timeline" onclick="toggleMobileMenu()" class="block hover:text-blue-600">מוקדים וציר זמן</a>
-            <a href="#gallery" onclick="toggleMobileMenu()" class="block hover:text-blue-600">גלריית תמונות ולוגו</a>
-            <a href="#faq" onclick="toggleMobileMenu()" class="block hover:text-blue-600">שאלות ותשובות</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block hover:text-blue-600" data-i18n="navAbout">אודות התחרות</a>
+            <a href="#missions" onclick="toggleMobileMenu()" class="block hover:text-blue-600" data-i18n="navMissions">9 המשימות והגביעים</a>
+            <a href="#leagues" onclick="toggleMobileMenu()" class="block hover:text-blue-600" data-i18n="navLeagues">מסלולי הליגות</a>
+            <a href="#timeline" onclick="toggleMobileMenu()" class="block hover:text-blue-600" data-i18n="navTimeline">מוקדים וציר זמן</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block hover:text-blue-600" data-i18n="navGallery">גלריית תמונות ולוגו</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block hover:text-blue-600" data-i18n="navFaq">שאלות ותשובות</a>
         </div>
     </header>
 
@@ -78,57 +132,57 @@
             
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100/60 text-blue-800 text-sm font-semibold mb-6">
                 <i class="fas fa-trophy text-amber-500"></i>
-                <span>תחרות הרובוטיקה והרחפנים הבינלאומית מבית חותם חיים</span>
+                <span data-i18n="heroBadge">תחרות הרובוטיקה והרחפנים הבינלאומית מבית חותם חיים</span>
             </div>
 
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6" data-i18n="heroTitle">
                 בחירה חכמה. <span class="text-blue-600">ניצחון גדול.</span>
             </h1>
 
-            <p class="text-lg sm:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 font-normal leading-relaxed">
-                9 משימות עיר חכמה, 9 גביעים נפרדים. חוק ברזל אסטרטגי אחד: <strong class="text-slate-900">גביע אחד בלבד לכל קבוצה</strong>. שילוב פריצת דרך של רובוטים קרקעיים ורחפנים.
+            <p class="text-lg sm:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 font-normal leading-relaxed" data-i18n="heroSubtitle">
+                9 משימות עיר חכמה, 9 גביעים נפרדים. חוק ברזל אסטרטגי אחד: גביע אחד בלבד לכל קבוצה. שילוב פריצת דרך של רובוטים קרקעיים ורחפנים.
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-                <a href="#register" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-blue-500/25 transition">
+                <a href="#register" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-blue-500/25 transition" data-i18n="heroCtaRegister">
                     הרשמה ושריון משטח (1,500 ₪)
                 </a>
-                <a href="#missions" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-lg px-8 py-4 rounded-xl transition">
+                <a href="#missions" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-lg px-8 py-4 rounded-xl transition" data-i18n="heroCtaMap">
                     למפת 9 המשימות
                 </a>
             </div>
 
-            <!-- Stats/Badges Bar -->
+            <!-- Stats Bar -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-100">
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
                     <div class="text-2xl font-black text-blue-600">15+</div>
-                    <div class="text-xs font-semibold text-slate-500">גביעים והוקרות</div>
+                    <div class="text-xs font-semibold text-slate-500" data-i18n="statTrophies">גביעים והוקרות</div>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="text-2xl font-black text-blue-600">4 מוקדים</div>
-                    <div class="text-xs font-semibold text-slate-500">סכנין, חיפה, פ"ת, ב"ש</div>
+                    <div class="text-2xl font-black text-blue-600">4</div>
+                    <div class="text-xs font-semibold text-slate-500" data-i18n="statLocations">סכנין, חיפה, פ"ת, ב"ש</div>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
                     <div class="text-2xl font-black text-blue-600">STEM</div>
-                    <div class="text-xs font-semibold text-slate-500">מאושר תקציב גפ"ן</div>
+                    <div class="text-xs font-semibold text-slate-500" data-i18n="statGafen">מאושר תקציב גפ"ן</div>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="text-2xl font-black text-blue-600">תלת-לשוני</div>
-                    <div class="text-xs font-semibold text-slate-500">שיפוט בעברית וערבית</div>
+                    <div class="text-2xl font-black text-blue-600">3</div>
+                    <div class="text-xs font-semibold text-slate-500" data-i18n="statLang">שיפוט בעברית וערבית</div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Scroll-Expanding Video Section -->
-    <section id="video-section" class="py-12 bg-slate-900 text-white overflow-hidden">
+    <!-- First Video Section -->
+    <section id="video-section-1" class="py-12 bg-slate-900 text-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-2xl sm:text-4xl font-extrabold mb-3">צפו בתחרות בפעולה</h2>
-            <p class="text-slate-400 text-sm sm:text-base mb-8">נגנו את סרטון הפרומו הרשמי של תחרות SCA</p>
+            <h2 class="text-2xl sm:text-4xl font-extrabold mb-3" data-i18n="video1Title">צפו בתחרות בפעולה</h2>
+            <p class="text-slate-400 text-sm sm:text-base mb-8" data-i18n="video1Sub">נגנו את סרטון הפרומו הרשמי של תחרות SCA</p>
             
-            <div id="video-wrapper" class="flex justify-center items-center w-full min-h-[300px] sm:min-h-[500px]">
-                <div id="video-container" class="video-container w-full max-w-2xl sm:max-w-3xl aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 scale-95 opacity-80">
+            <div class="flex justify-center items-center w-full min-h-[300px] sm:min-h-[500px]">
+                <div class="video-container w-full max-w-2xl sm:max-w-3xl aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 scale-95 opacity-80">
                     <iframe id="promo-iframe" class="w-full h-full" src="https://www.youtube.com/embed/FbsEU789Le4?enablejsapi=1" title="SCA Competition Promo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -140,33 +194,33 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="text-blue-600 font-bold text-sm tracking-wider uppercase">חדשנות חינוכית בגובה העיניים</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 my-4 leading-tight">
-                        החלופה המתקדמת והמונגשת לתחרויות הרובוטיקה בישראל
+                    <span class="text-blue-600 font-bold text-sm tracking-wider uppercase" data-i18n="aboutBadge">חדשנות חינוכית בגובה העיניים</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 my-4 leading-tight" data-i18n="aboutTitle">
+                        החלופה המתקדמת והמונגשת לתחרויות הרובוטיקה בישראל (FIRST & WRO)
                     </h2>
-                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
-                        תחרות **SCA International Smart City AI** מבית חותם חיים נולדה כדי לתת מענה אמיתי לבתי ספר, רשויות ומורים: תחרות יוקרתית ופורצת דרך ללא צורך בתקציבי עתק.
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6" data-i18n="aboutDesc">
+                        תחרות SCA International Smart City AI מבית חותם חיים נולדה כדי לתת מענה אמיתי לבתי ספר, רשויות ומורים: תחרות יוקרתית ופורצת דרך ללא צורך בתקציבי עתק.
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-start gap-3">
                             <div class="bg-blue-100 text-blue-600 p-2 rounded-lg font-bold"><i class="fas fa-check"></i></div>
                             <div>
-                                <strong class="text-slate-900 block">תקציב נגיש ומאושר גפ"ן:</strong>
-                                <span class="text-slate-600 text-sm">1,500 ₪ בלבד הכוללים את משטח התחרות הפיזי, ניתן למימון מלא בסל STEM.</span>
+                                <strong class="text-slate-900 block" data-i18n="aboutPoint1Title">תקציב נגיש ומאושר גפ"ן:</strong>
+                                <span class="text-slate-600 text-sm" data-i18n="aboutPoint1Desc">1,500 ₪ בלבד הכוללים את משטח התחרות הפיזי, ניתן למימון מלא בסל STEM.</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <div class="bg-blue-100 text-blue-600 p-2 rounded-lg font-bold"><i class="fas fa-check"></i></div>
                             <div>
-                                <strong class="text-slate-900 block">חופש טכנולוגי מלא:</strong>
-                                <span class="text-slate-600 text-sm">עבודה עם הציוד הקיים בבית הספר - LEGO SPIKE, Micro:bit, Arduino, ורחפנים.</span>
+                                <strong class="text-slate-900 block" data-i18n="aboutPoint2Title">חופש טכנולוגי מלא:</strong>
+                                <span class="text-slate-600 text-sm" data-i18n="aboutPoint2Desc">עבודה עם הציוד הקיים בבית הספר - LEGO SPIKE, Micro:bit, Arduino, ורחפנים.</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <div class="bg-blue-100 text-blue-600 p-2 rounded-lg font-bold"><i class="fas fa-check"></i></div>
                             <div>
-                                <strong class="text-slate-900 block">שוויון הזדמנויות אסטרטגי:</strong>
-                                <span class="text-slate-600 text-sm">בזכות מודל "גביע אחד לקבוצה", גם קבוצות צעירות יכולות לזכות בגביע מקום ראשון.</span>
+                                <strong class="text-slate-900 block" data-i18n="aboutPoint3Title">שוויון הזדמנויות אסטרטגי:</strong>
+                                <span class="text-slate-600 text-sm" data-i18n="aboutPoint3Desc">בזכות מודל "גביע אחד לקבוצה", גם קבוצות צעירות יכולות לזכות בגביע מקום ראשון.</span>
                             </div>
                         </li>
                     </ul>
@@ -182,50 +236,45 @@
     <section id="missions" class="py-20 bg-slate-50 border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-blue-600 font-bold text-sm tracking-widest uppercase">אסטרטגיה וניצחון</span>
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3">9 המשימות ו-9 הגביעים</h2>
-                <p class="text-slate-600 text-lg">
+                <span class="text-blue-600 font-bold text-sm tracking-widest uppercase" data-i18n="missionsBadge">אסטרטגיה וניצחון</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3" data-i18n="missionsTitle">9 המשימות ו-9 הגביעים</h2>
+                <p class="text-slate-600 text-lg" data-i18n="missionsSub">
                     כל משימה מייצגת אתגר בעיר החכמה. בחרו משימה אחת, התמקדו בה והביאו את הגביע לנבחרת!
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Mission 1 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
                     <div class="flex justify-between items-center mb-4">
-                        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">קלה | בטוחה</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full" data-i18n="m1Level">קלה | בטוחה</span>
                         <span class="text-xl font-bold text-blue-600">🏆 #1</span>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">1. הקפה חיצונית</h3>
-                    <p class="text-slate-600 text-sm mb-4">מעקב קו מהיר ומדויק מסביב לעיר החכמה. משימה קלאסית לכל רובוט.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="m1Title">1. הקפה חיצונית</h3>
+                    <p class="text-slate-600 text-sm mb-4" data-i18n="m1Desc">מעקב קו מהיר ומדויק מסביב לעיר החכמה. משימה קלאסית לכל רובוט.</p>
                 </div>
 
-                <!-- Mission 5 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
                     <div class="flex justify-between items-center mb-4">
-                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">בינונית | מורכבת</span>
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full" data-i18n="m5Level">בינונית | מורכבת</span>
                         <span class="text-xl font-bold text-blue-600">🏆 #5</span>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">5. תחבורה אוטונומית</h3>
-                    <p class="text-slate-600 text-sm mb-4">זיהוי תמרורים, מעקף מכשולים דינמיים וחנייה אוטונומית בצומת.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="m5Title">5. תחבורה אוטונומית</h3>
+                    <p class="text-slate-600 text-sm mb-4" data-i18n="m5Desc">זיהוי תמרורים, מעקף מכשולים דינמיים וחנייה אוטונומית בצומת.</p>
                 </div>
 
-                <!-- Mission 8 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
                     <div class="flex justify-between items-center mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">Ultra SCA | רחפנים</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full" data-i18n="m8Level">Ultra SCA | רחפנים</span>
                         <span class="text-xl font-bold text-blue-600">🏆 #8</span>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">8. הובלת ציוד משולבת</h3>
-                    <p class="text-slate-600 text-sm mb-4">תכנות רחפן ורובוט קרקעי הפועלים יחד להעברת ציוד חירום מעל מכשולים.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="m8Title">8. הובלת ציוד משולבת</h3>
+                    <p class="text-slate-600 text-sm mb-4" data-i18n="m8Desc">תכנות רחפן ורובוט קרקעי הפועלים יחד להעברת ציוד חירום מעל מכשולים.</p>
                 </div>
-
             </div>
 
             <div class="text-center mt-10">
                 <a href="#register" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-8 rounded-xl transition">
-                    <span>שריינו ערכת משטח עכשיו</span>
+                    <span data-i18n="btnReserveMat">שריינו ערכת משטח עכשיו</span>
                     <i class="fas fa-arrow-left"></i>
                 </a>
             </div>
@@ -236,61 +285,42 @@
     <section id="leagues" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3">מסלולי הליגות</h2>
-                <p class="text-slate-600 text-lg">חלוקה מותאמת לפי שכבות גיל ורמת מורכבות טכנולוגית</p>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3" data-i18n="leaguesTitle">מסלולי הליגות</h2>
+                <p class="text-slate-600 text-lg" data-i18n="leaguesSub">חלוקה מותאמת לפי שכבות גיל ורמת מורכבות טכנולוגית</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- SCA Elementary -->
                 <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between items-center mb-6">
-                            <span class="bg-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-full">כיתות ג' - ו'</span>
+                            <span class="bg-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-full" data-i18n="league1Age">כיתות ג' - ו'</span>
                             <i class="fas fa-robot text-3xl text-blue-600"></i>
                         </div>
-                        <h3 class="text-2xl font-extrabold text-slate-900 mb-4">SCA ליסודי</h3>
-                        <p class="text-slate-600 leading-relaxed mb-6">
+                        <h3 class="text-2xl font-extrabold text-slate-900 mb-4" data-i18n="league1Name">SCA ליסודי</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6" data-i18n="league1Desc">
                             ליגה המיועדת לתלמידי בתי הספר היסודיים. דגש על פתרון בעיות, תכנות ויזואלי/טקסטואלי ועבודת צוות.
                         </p>
-                        <div class="space-y-2 mb-8">
-                            <div class="text-xs font-bold text-slate-500 uppercase">ציוד קביל:</div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-white border px-3 py-1 rounded-lg text-xs font-semibold">LEGO SPIKE</span>
-                                <span class="bg-white border px-3 py-1 rounded-lg text-xs font-semibold">Micro:bit</span>
-                                <span class="bg-white border px-3 py-1 rounded-lg text-xs font-semibold">Arduino</span>
-                            </div>
-                        </div>
                     </div>
-                    <a href="#register" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition">
+                    <a href="#register" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition" data-i18n="league1Btn">
                         הרשמה לליגה הצעירה
                     </a>
                 </div>
 
-                <!-- Ultra SCA -->
                 <div class="bg-slate-900 text-white rounded-3xl p-8 border border-slate-800 flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between items-center mb-6">
-                            <span class="bg-amber-400 text-slate-950 text-xs font-bold px-4 py-1.5 rounded-full">כיתות ז' - ט'</span>
+                            <span class="bg-amber-400 text-slate-950 text-xs font-bold px-4 py-1.5 rounded-full" data-i18n="league2Age">כיתות ז' - ט'</span>
                             <i class="fas fa-plane-drone text-3xl text-amber-400"></i>
                         </div>
-                        <h3 class="text-2xl font-extrabold text-white mb-4">Ultra SCA למתקדמים</h3>
-                        <p class="text-slate-300 leading-relaxed mb-6">
+                        <h3 class="text-2xl font-extrabold text-white mb-4" data-i18n="league2Name">Ultra SCA למתקדמים</h3>
+                        <p class="text-slate-300 leading-relaxed mb-6" data-i18n="league2Desc">
                             שילוב ייחודי וראשון מסוגו: רובוטים קרקעיים ורחפנים הטסים אוטונומית באותו המקצה בעיר החכמה.
                         </p>
-                        <div class="space-y-2 mb-8">
-                            <div class="text-xs font-bold text-slate-400 uppercase">דגשים טכנולוגיים:</div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-slate-800 border border-slate-700 px-3 py-1 rounded-lg text-xs font-semibold text-amber-300">תכנות רחפנים</span>
-                                <span class="bg-slate-800 border border-slate-700 px-3 py-1 rounded-lg text-xs font-semibold text-amber-300">תקשורת קרקע-אוויר</span>
-                            </div>
-                        </div>
                     </div>
-                    <a href="#register" class="block text-center bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold py-3.5 rounded-xl transition">
+                    <a href="#register" class="block text-center bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold py-3.5 rounded-xl transition" data-i18n="league2Btn">
                         הרשמה לליגת Ultra SCA
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -299,49 +329,61 @@
     <section id="timeline" class="py-20 bg-slate-50 border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3">מוקדים ולוח זמנים</h2>
-                <p class="text-slate-600 text-lg">אירועי השיפוט והגמר יתקיימו במחצית השנייה של מאי 2026</p>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3" data-i18n="timelineTitle">מוקדים ולוח זמנים</h2>
+                <p class="text-slate-600 text-lg" data-i18n="timelineSub">אירועי השיפוט והגמר יתקיימו במחצית השנייה של מאי 2026</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
                     <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3 class="font-bold text-xl mb-1">סכנין</h3>
-                    <p class="text-slate-500 text-xs mb-3">מאי 2026</p>
-                    <span class="bg-purple-50 text-purple-700 text-xs font-bold px-3 py-1 rounded-full border border-purple-200">שיפוט: עברית / ערבית</span>
+                    <h3 class="font-bold text-xl mb-1" data-i18n="loc1">סכנין</h3>
+                    <p class="text-slate-500 text-xs mb-3" data-i18n="may2026">מאי 2026</p>
+                    <span class="bg-purple-50 text-purple-700 text-xs font-bold px-3 py-1 rounded-full border border-purple-200" data-i18n="judgeBi">שיפוט: עברית / ערבית</span>
                 </div>
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
                     <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3 class="font-bold text-xl mb-1">פתח תקווה</h3>
-                    <p class="text-slate-500 text-xs mb-3">מאי 2026</p>
-                    <span class="bg-purple-50 text-purple-700 text-xs font-bold px-3 py-1 rounded-full border border-purple-200">שיפוט: עברית / ערבית</span>
+                    <h3 class="font-bold text-xl mb-1" data-i18n="loc2">פתח תקווה</h3>
+                    <p class="text-slate-500 text-xs mb-3" data-i18n="may2026">מאי 2026</p>
+                    <span class="bg-purple-50 text-purple-700 text-xs font-bold px-3 py-1 rounded-full border border-purple-200" data-i18n="judgeBi">שיפוט: עברית / ערבית</span>
                 </div>
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
                     <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3 class="font-bold text-xl mb-1">חיפה</h3>
-                    <p class="text-slate-500 text-xs mb-3">מאי 2026</p>
-                    <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-200">שיפוט: עברית</span>
+                    <h3 class="font-bold text-xl mb-1" data-i18n="loc3">חיפה</h3>
+                    <p class="text-slate-500 text-xs mb-3" data-i18n="may2026">מאי 2026</p>
+                    <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-200" data-i18n="judgeHe">שיפוט: עברית</span>
                 </div>
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center">
                     <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3 class="font-bold text-xl mb-1">באר שבע</h3>
-                    <p class="text-slate-500 text-xs mb-3">מאי 2026</p>
-                    <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-200">שיפוט: עברית</span>
+                    <h3 class="font-bold text-xl mb-1" data-i18n="loc4">באר שבע</h3>
+                    <p class="text-slate-500 text-xs mb-3" data-i18n="may2026">מאי 2026</p>
+                    <span class="bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full border border-blue-200" data-i18n="judgeHe">שיפוט: עברית</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery & Download Assets Section -->
+    <!-- Second Video Section -->
+    <section id="video-section-2" class="py-12 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl sm:text-4xl font-extrabold mb-3" data-i18n="video2Title">רגעי שיא והשראה</h2>
+            <p class="text-slate-400 text-sm sm:text-base mb-8" data-i18n="video2Sub">צפו ברגעי ההתרגשות וההצלחה של הקבוצות המשתתפות</p>
+            
+            <div class="flex justify-center items-center w-full min-h-[300px] sm:min-h-[500px]">
+                <div class="video-container w-full max-w-2xl sm:max-w-3xl aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 scale-95 opacity-80">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/9FExLo0e-zI?enablejsapi=1" title="SCA Competition Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-blue-600 font-bold text-sm tracking-widest uppercase">גלריה וחומרים רשמיים</span>
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3">תמונות מהתחרות והורדת מותג</h2>
-                <p class="text-slate-600 text-lg">חומרי הסברה, לוגואים רשמיים ותמונות מהפעילות</p>
+                <span class="text-blue-600 font-bold text-sm tracking-widest uppercase" data-i18n="galleryBadge">גלריה וחומרים רשמיים</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 my-3" data-i18n="galleryTitle">תמונות מהתחרות והורדת מותג</h2>
             </div>
 
-            <!-- Photos Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group">
                     <img src="https://i.postimg.cc/zvZc5bDF/Screenshot-2026-09-02-230843.png" alt="SCA Logo Asset" class="w-full h-48 object-contain p-4 bg-slate-50 group-hover:scale-105 transition duration-300">
@@ -357,22 +399,20 @@
                 </div>
             </div>
 
-            <!-- Download Official Assets Box -->
             <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">הורדת ערכת מותג ולוגואים רשמיים</h3>
-                    <p class="text-slate-600 text-sm">הורידו את הלוגו הרשמי של התחרות לשילוב במצגות, פרסומי בית הספר ואישורי רשות.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-1" data-i18n="downloadTitle">הורדת ערכת מותג ולוגואים רשמיים</h3>
+                    <p class="text-slate-600 text-sm" data-i18n="downloadSub">הורידו את הלוגו הרשמי של התחרות לשילוב במצגות ופרסומים.</p>
                 </div>
                 <div class="flex flex-wrap gap-3 shrink-0">
                     <a href="https://i.postimg.cc/zvZc5bDF/Screenshot-2026-09-02-230843.png" target="_blank" download class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-xl text-sm transition inline-flex items-center gap-2">
-                        <i class="fas fa-download"></i> הורדת לוגו SCA
+                        <i class="fas fa-download"></i> <span data-i18n="btnDownloadLogo">הורדת לוגו SCA</span>
                     </a>
                     <a href="https://i.postimg.cc/gjFTdXcq/Screenshot-2026-09-02-230833.png" target="_blank" download class="bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-5 rounded-xl text-sm transition inline-flex items-center gap-2">
-                        <i class="fas fa-file-image"></i> הורדת סמל Favicon
+                        <i class="fas fa-file-image"></i> <span data-i18n="btnDownloadFavicon">הורדת סמל Favicon</span>
                     </a>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -380,26 +420,26 @@
     <section id="faq" class="py-20 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">שאלות ותשובות נפוצות</h2>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3" data-i18n="faqTitle">שאלות ותשובות נפוצות</h2>
             </div>
 
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
                     <button onclick="toggleAccordion(this)" class="w-full p-6 text-right font-bold text-slate-900 flex justify-between items-center">
-                        <span>איך משלמים עבור התחרות דרך תקציב גפ"ן?</span>
+                        <span data-i18n="q1">איך משלמים עבור התחרות דרך תקציב גפ"ן?</span>
                         <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
                     </button>
-                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-50 pt-4">
+                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-50 pt-4" data-i18n="a1">
                         תחרות SCA מאושרת במערכת גפ"ן תחת תוכנית STEM. לאחר מילוי הטופס באתר, נציג הנהלת התחרות ייצור אתכם קשר להנפקת הזמנת רכש מסודרת.
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
                     <button onclick="toggleAccordion(this)" class="w-full p-6 text-right font-bold text-slate-900 flex justify-between items-center">
-                        <span>מה כולל תשלום ה-1,500 ₪?</span>
+                        <span data-i18n="q2">מה כולל תשלום ה-1,500 ₪?</span>
                         <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
                     </button>
-                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-50 pt-4">
+                    <div class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-50 pt-4" data-i18n="a2">
                         התשלום מכסה את השתתפות הנבחרת, קבלת משטח העיר החכמה הפיזי לאימונים בבית הספר, וגישה מלאה לחומרי העזר.
                     </div>
                 </div>
@@ -411,54 +451,53 @@
     <section id="register" class="py-20 bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10">
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-3">הרשמה ושריון משטח</h2>
-                <p class="text-slate-600">מלאו את הפרטים ונציג חותם חיים יחזור אליכם לתיאום</p>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 mb-3" data-i18n="regTitle">הרשמה ושריון משטח</h2>
+                <p class="text-slate-600" data-i18n="regSub">מלאו את הפרטים ונציג חותם חיים יחזור אליכם לתיאום</p>
             </div>
 
             <form action="https://formspree.io/f/rami@robotix.co.il" method="POST" class="bg-slate-50 p-8 rounded-3xl border border-slate-200 space-y-6">
-                
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block font-bold text-sm mb-2 text-slate-700">שם איש קשר / מורה *</label>
+                        <label class="block font-bold text-sm mb-2 text-slate-700" data-i18n="lblContact">שם איש קשר / מורה *</label>
                         <input type="text" name="full_name" required class="w-full p-3.5 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
                     <div>
-                        <label class="block font-bold text-sm mb-2 text-slate-700">טלפון להתקשרות *</label>
+                        <label class="block font-bold text-sm mb-2 text-slate-700" data-i18n="lblPhone">טלפון להתקשרות *</label>
                         <input type="tel" name="phone" required class="w-full p-3.5 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block font-bold text-sm mb-2 text-slate-700">אימייל *</label>
+                        <label class="block font-bold text-sm mb-2 text-slate-700" data-i18n="lblEmail">אימייל *</label>
                         <input type="email" name="email" required class="w-full p-3.5 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
                     <div>
-                        <label class="block font-bold text-sm mb-2 text-slate-700">סמל מוסד / שם רשות</label>
+                        <label class="block font-bold text-sm mb-2 text-slate-700" data-i18n="lblInst">סמל מוסד / שם רשות</label>
                         <input type="text" name="institution" class="w-full p-3.5 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block font-bold text-sm mb-2 text-slate-700">מסלול ליגה *</label>
+                        <label class="block font-bold text-sm mb-2 text-slate-700" data-i18n="lblLeague">מסלול ליגה *</label>
                         <select name="league" required class="w-full p-3.5 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                            <option value="SCA Elementary (ג-ו)">SCA ליסודי (כיתות ג'-ו')</option>
-                            <option value="Ultra SCA (ז-ט)">Ultra SCA למתקדמים (כיתות ז'-ט')</option>
+                            <option value="SCA Elementary (ג-ו)" data-i18n="optElementary">SCA ליסודי (כיתות ג'-ו')</option>
+                            <option value="Ultra SCA (ז-ט)" data-i18n="optUltra">Ultra SCA למתקדמים (כיתות ז'-ט')</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block font-bold text-sm mb-2 text-slate-700">מוקד מועדף *</label>
+                        <label class="block font-bold text-sm mb-2 text-slate-700" data-i18n="lblLoc">מוקד מועדף *</label>
                         <select name="location" required class="w-full p-3.5 bg-white border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                            <option value="סכנין">סכנין (שיפוט עברית/ערבית)</option>
-                            <option value="פתח תקווה">פתח תקווה (שיפוט עברית/ערבית)</option>
-                            <option value="חיפה">חיפה (שיפוט עברית)</option>
-                            <option value="באר שבע">באר שבע (שיפוט עברית)</option>
+                            <option value="סכנין">סכנין</option>
+                            <option value="פתח תקווה">פתח תקווה</option>
+                            <option value="חיפה">חיפה</option>
+                            <option value="באר שבע">באר שבע</option>
                         </select>
                     </div>
                 </div>
 
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-lg py-4 rounded-xl shadow-lg shadow-blue-500/25 transition">
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-lg py-4 rounded-xl shadow-lg shadow-blue-500/25 transition" data-i18n="btnSubmitReg">
                     שליחת הרשמה לשריון משטח
                 </button>
             </form>
@@ -470,23 +509,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
             <div>
                 <img src="https://i.postimg.cc/zvZc5bDF/Screenshot-2026-09-02-230843.png" alt="SCA Logo" class="h-12 w-auto mb-4 brightness-200">
-                <p class="text-slate-400 text-sm leading-relaxed">
+                <p class="text-slate-400 text-sm leading-relaxed" data-i18n="footerDesc">
                     תחרות הרובוטיקה והרחפנים הבינלאומית SCA מבית חותם חיים בע"מ. מודל אסטרטגי יחידני ומאושר גפ"ן.
                 </p>
             </div>
             <div>
-                <h4 class="font-bold text-lg mb-4 text-slate-200">צור קשר</h4>
+                <h4 class="font-bold text-lg mb-4 text-slate-200" data-i18n="footerContact">צור קשר</h4>
                 <p class="text-slate-400 text-sm mb-2">אימייל: <a href="mailto:rami@robotix.co.il" class="text-blue-400 underline">rami@robotix.co.il</a></p>
-                <p class="text-slate-400 text-sm">תקציב STEM - מתווה גפ"ן מאושר</p>
+                <p class="text-slate-400 text-sm" data-i18n="footerGafen">תקציב STEM - מתווה גפ"ן מאושר</p>
             </div>
             <div>
-                <h4 class="font-bold text-lg mb-4 text-slate-200">תקשורת מהירה</h4>
+                <h4 class="font-bold text-lg mb-4 text-slate-200" data-i18n="footerChat">תקשורת מהירה</h4>
                 <a href="https://wa.me/972587187122?text=שלום,%20אשמח%20לקבל%20פרטים%20על%20תחרות%20SCA" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-3 rounded-xl transition text-sm">
-                    <i class="fab fa-whatsapp text-lg"></i> צ'אט ישיר בוואטסאפ
+                    <i class="fab fa-whatsapp text-lg"></i> <span data-i18n="btnWa">צ'אט ישיר בוואטסאפ</span>
                 </a>
             </div>
         </div>
-        <div class="text-center text-xs text-slate-600 border-t border-slate-900 pt-8">
+        <div class="text-center text-xs text-slate-600 border-t border-slate-900 pt-8" data-i18n="copy">
             &copy; כל הזכויות שמורות לחברת חותם חיים בע"מ - SCA Competition.
         </div>
     </footer>
@@ -496,8 +535,346 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- JavaScript Logic -->
+    <!-- Translation Dictionary & JS Logic -->
     <script>
+        const i18n = {
+            he: {
+                gafenBadge: "מאושר גפ\"ן (STEM)",
+                navAbout: "אודות",
+                navMissions: "9 המשימות",
+                navLeagues: "הליגות",
+                navTimeline: "לוח זמנים",
+                navGallery: "גלריה וחומרים",
+                navFaq: "שאלות נפוצות",
+                navRegisterBtn: "הרשמה ותשלום",
+                heroBadge: "תחרות הרובוטיקה והרחפנים הבינלאומית מבית חותם חיים",
+                heroTitle: "בחירה חכמה. <span class=\"text-blue-600\">ניצחון גדול.</span>",
+                heroSubtitle: "9 משימות עיר חכמה, 9 גביעים נפרדים. חוק ברזל אסטרטגי אחד: גביע אחד בלבד לכל קבוצה. שילוב פריצת דרך של רובוטים קרקעיים ורחפנים.",
+                heroCtaRegister: "הרשמה ושריון משטח (1,500 ₪)",
+                heroCtaMap: "למפת 9 המשימות",
+                statTrophies: "גביעים והוקרות",
+                statLocations: "סכנין, חיפה, פ\"ת, ב\"ש",
+                statGafen: "מאושר תקציב גפ\"ן",
+                statLang: "שיפוט בעברית וערבית",
+                video1Title: "צפו בתחרות בפעולה",
+                video1Sub: "נגנו את סרטון הפרומו הרשמי של תחרות SCA",
+                aboutBadge: "חדשנות חינוכית בגובה העיניים",
+                aboutTitle: "החלופה המתקדמת והמונגשת לתחרויות הרובוטיקה בישראל (FIRST & WRO)",
+                aboutDesc: "תחרות SCA International Smart City AI מבית חותם חיים נולדה כדי לתת מענה אמיתי לבתי ספר, רשויות ומורים: תחרות יוקרתית ופורצת דרך ללא צורך בתקציבי עתק.",
+                aboutPoint1Title: "תקציב נגיש ומאושר גפ\"ן:",
+                aboutPoint1Desc: "1,500 ₪ בלבד הכוללים את משטח התחרות הפיזי, ניתן למימון מלא בסל STEM.",
+                aboutPoint2Title: "חופש טכנולוגי מלא:",
+                aboutPoint2Desc: "עבודה עם הציוד הקיים בבית הספר - LEGO SPIKE, Micro:bit, Arduino, ורחפנים.",
+                aboutPoint3Title: "שוויון הזדמנויות אסטרטגי:",
+                aboutPoint3Desc: "בזכות מודל \"גביע אחד לקבוצה\", גם קבוצות צעירות יכולות לזכות בגביע מקום ראשון.",
+                missionsBadge: "אסטרטגיה וניצחון",
+                missionsTitle: "9 המשימות ו-9 הגביעים",
+                missionsSub: "כל משימה מייצגת אתגר בעיר החכמה. בחרו משימה אחת, התמקדו בה והביאו את הגביע לנבחרת!",
+                m1Level: "קלה | בטוחה",
+                m1Title: "1. הקפה חיצונית",
+                m1Desc: "מעקב קו מהיר ומדויק מסביב לעיר החכמה. משימה קלאסית לכל רובוט.",
+                m5Level: "בינונית | מורכבת",
+                m5Title: "5. תחבורה אוטונומית",
+                m5Desc: "זיהוי תמרורים, מעקף מכשולים דינמיים וחנייה אוטונומית בצומת.",
+                m8Level: "Ultra SCA | רחפנים",
+                m8Title: "8. הובלת ציוד משולבת",
+                m8Desc: "תכנות רחפן ורובוט קרקעי הפועלים יחד להעברת ציוד חירום מעל מכשולים.",
+                btnReserveMat: "שריינו ערכת משטח עכשיו",
+                leaguesTitle: "מסלולי הליגות",
+                leaguesSub: "חלוקה מותאמת לפי שכבות גיל ורמת מורכבות טכנולוגית",
+                league1Age: "כיתות ג' - ו'",
+                league1Name: "SCA ליסודי",
+                league1Desc: "ליגה המיועדת לתלמידי בתי הספר היסודיים. דגש על פתרון בעיות, תכנות ויזואלי/טקסטואלי ועבודת צוות.",
+                league1Btn: "הרשמה לליגה הצעירה",
+                league2Age: "כיתות ז' - ט'",
+                league2Name: "Ultra SCA למתקדמים",
+                league2Desc: "שילוב ייחודי וראשון מסוגו: רובוטים קרקעיים ורחפנים הטסים אוטונומית באותו המקצה בעיר החכמה.",
+                league2Btn: "הרשמה לליגת Ultra SCA",
+                timelineTitle: "מוקדים ולוח זמנים",
+                timelineSub: "אירועי השיפוט והגמר יתקיימו במחצית השנייה של מאי 2026",
+                loc1: "סכנין",
+                loc2: "פתח תקווה",
+                loc3: "חיפה",
+                loc4: "באר שבע",
+                may2026: "מאי 2026",
+                judgeBi: "שיפוט: עברית / ערבית",
+                judgeHe: "שיפוט: עברית",
+                video2Title: "רגעי שיא והשראה",
+                video2Sub: "צפו ברגעי ההתרגשות וההצלחה של הקבוצות המשתתפות",
+                galleryBadge: "גלריה וחומרים רשמיים",
+                galleryTitle: "תמונות מהתחרות והורדת מותג",
+                downloadTitle: "הורדת ערכת מותג ולוגואים רשמיים",
+                downloadSub: "הורידו את הלוגו הרשמי של התחרות לשילוב במצגות ופרסומים.",
+                btnDownloadLogo: "הורדת לוגו SCA",
+                btnDownloadFavicon: "הורדת סמל Favicon",
+                faqTitle: "שאלות ותשובות נפוצות",
+                q1: "איך משלמים עבור התחרות דרך תקציב גפ\"ן?",
+                a1: "תחרות SCA מאושרת במערכת גפ\"ן תחת תוכנית STEM. לאחר מילוי הטופס באתר, נציג הנהלת התחרות ייצור אתכם קשר להנפקת הזמנת רכש מסודרת.",
+                q2: "מה כולל תשלום ה-1,500 ₪?",
+                a2: "התשלום מכסה את השתתפות הנבחרת, קבלת משטח העיר החכמה הפיזי לאימונים בבית הספר, וגישה מלאה לחומרי העזר.",
+                regTitle: "הרשמה ושריון משטח",
+                regSub: "מלאו את הפרטים ונציג חותם חיים יחזור אליכם לתיאום",
+                lblContact: "שם איש קשר / מורה *",
+                lblPhone: "טלפון להתקשרות *",
+                lblEmail: "אימייל *",
+                lblInst: "סמל מוסד / שם רשות",
+                lblLeague: "מסלול ליגה *",
+                optElementary: "SCA ליסודי (כיתות ג'-ו')",
+                optUltra: "Ultra SCA למתקדמים (כיתות ז'-ט')",
+                lblLoc: "מוקד מועדף *",
+                btnSubmitReg: "שליחת הרשמה לשריון משטח",
+                footerDesc: "תחרות הרובוטיקה והרחפנים הבינלאומית SCA מבית חותם חיים בע\"מ. מודל אסטרטגי יחידני ומאושר גפ\"ן.",
+                footerContact: "צור קשר",
+                footerGafen: "תקציב STEM - מתווה גפ\"ן מאושר",
+                footerChat: "תקשורת מהירה",
+                btnWa: "צ'אט ישיר בוואטסאפ",
+                copy: "© כל הזכויות שמורות לחברת חותם חיים בע\"מ - SCA Competition."
+            },
+            ar: {
+                gafenBadge: "معتمد جيفين (STEM)",
+                navAbout: "عن المسابقة",
+                navMissions: "المهام التسع",
+                navLeagues: "الدوريات",
+                navTimeline: "الجدول الزمني",
+                navGallery: "المعرض والوسائط",
+                navFaq: "الأسئلة الشائعة",
+                navRegisterBtn: "التسجيل والدفع",
+                heroBadge: "مسابقة الروبوتات والطائرات المسيرة الدولية من حوتام حاييم",
+                heroTitle: "إختيار ذكي. <span class=\"text-blue-600\">فوز كبير.</span>",
+                heroSubtitle: "9 مهام للمدينة الذكية، 9 كؤوس منفصلة. قانون استراتيجي صارم: كأس واحد فقط لكل فريق. دمج بين الروبوتات والطائرات المسيرة.",
+                heroCtaRegister: "التسجيل وحجز الميدان (1,500 ش.ج)",
+                heroCtaMap: "خريطة المهام التسع",
+                statTrophies: "كؤوس وتقديرات",
+                statLocations: "سخنين، حيفا، بيتاح تكفا، بئر السبع",
+                statGafen: "معتمد من ميزانية جيفين",
+                statLang: "تحكيم بالعبرية والعربية",
+                video1Title: "شاهد المسابقة في العمل",
+                video1Sub: "شغّل الفيديو الترويجي الرسمي لمسابقة SCA",
+                aboutBadge: "ابتكار تعليمي متقدم",
+                aboutTitle: "البديل المتقدم والمتاح لمسابقات الروبوتات (FIRST & WRO)",
+                aboutDesc: "تأسست مسابقة SCA International Smart City AI لتوفير حل حقيقي للمدارس والسلطات والمعلمين: مسابقة مرموقة دون الحاجة لميزانيات ضخمة.",
+                aboutPoint1Title: "ميزانية متاحة ومعتمدة:",
+                aboutPoint1Desc: "1,500 ش.ج فقط تشمل ميدان المسابقة الفعلي، مع إمكانية التمويل الكامل عبر سلة STEM.",
+                aboutPoint2Title: "حرية تكنولوجية كاملة:",
+                aboutPoint2Desc: "العمل مع المعدات الموجودة في المدرسة - LEGO SPIKE, Micro:bit, Arduino والطائرات المسيرة.",
+                aboutPoint3Title: "تكافؤ فرص استراتيجي:",
+                aboutPoint3Desc: "بفضل نموذج \"كأس واحد لكل فريق\"، حتى الفرق الشابة يمكنها الفوز بالمركز الأول.",
+                missionsBadge: "الاستراتيجية والفوز",
+                missionsTitle: "9 مهام و 9 كؤوس",
+                missionsSub: "كل مهمة تمثل تحديًا في المدينة الذكية. اختر مهمة واحدة وركز عليها لتحقيق الفوز!",
+                m1Level: "سهلة | آمنة",
+                m1Title: "1. الدورة الخارجية",
+                m1Desc: "تتبع خط سريع ودقيق حول المدينة الذكية. مهمة كلاسيكية لأي روبوت.",
+                m5Level: "متوسطة | معقدة",
+                m5Title: "5. النقل الذاتي",
+                m5Desc: "التعرف على الشواخص المرورية، تجاوز العقبات والتوقف الذاتي.",
+                m8Level: "Ultra SCA | طائرات مسيرة",
+                m8Title: "8. نقل المعدات المشترك",
+                m8Desc: "برمجة طائرة مسيرة وروبوت أرضي يعملان معًا لنقل معدات الطوارئ.",
+                btnReserveMat: "احجز حزمة الميدان الآن",
+                leaguesTitle: "مسارات الدوريات",
+                leaguesSub: "تصنيف مخصص حسب الفئات العمرية ومستوى التعقيد",
+                league1Age: "الصفوف الثالث - السادس",
+                league1Name: "SCA للابتدائي",
+                league1Desc: "دوري مخصص لطلاب المدارس الابتدائية. التركيز على حل المشكلات والبرمجة والعمل الجماعي.",
+                league1Btn: "التسجيل للدوري الصغير",
+                league2Age: "الصفوف السابع - التاسع",
+                league2Name: "Ultra SCA للمتقدمين",
+                league2Desc: "دمج فريد والأول من نوعه: روبوتات أرضية وطائرات مسيرة تطير بشكل مستقل في نفس المضمار.",
+                league2Btn: "التسجيل لدوري Ultra SCA",
+                timelineTitle: "المراكز والجدول الزمني",
+                timelineSub: "ستقام فعاليات التحكيم والنهائيات في النصف الثاني من مايو 2026",
+                loc1: "سخنين",
+                loc2: "بيتاح تكفا",
+                loc3: "حيفا",
+                loc4: "بئر السبع",
+                may2026: "مايو 2026",
+                judgeBi: "التحكيم: العبرية / العربية",
+                judgeHe: "التحكيم: العبرية",
+                video2Title: "لحظات الإلهام والقمة",
+                video2Sub: "شاهد لحظات الحماس والنجاح للفرق المشاركة",
+                galleryBadge: "المعرض والوسائط الرسمية",
+                galleryTitle: "صور من المسابقة وتحميل الشعار",
+                downloadTitle: "تحميل حزمة العلامة التجارية والشعارات",
+                downloadSub: "قم بتحميل الشعار الرسمي للمسابقة لاستخدامه في العروض والمنشورات.",
+                btnDownloadLogo: "تحميل شعار SCA",
+                btnDownloadFavicon: "تحميل رمز Favicon",
+                faqTitle: "الأسئلة الشائعة",
+                q1: "كيف يتم الدفع للمسابقة عبر ميزانية جيفين؟",
+                a1: "مسابقة SCA معتمدة في نظام جيفين تحت برنامج STEM. بعد تعبئة النموذج، سيتواصل معكم ممثل الإدارة.",
+                q2: "ماذا يشمل مبلغ 1,500 ش.ج؟",
+                a2: "يغطي المبلغ مشاركة الفريق، الحصول على ميدان التدريب الفعلي، والوصول الكامل للمواد التعليمية.",
+                regTitle: "التسجيل وحجز الميدان",
+                regSub: "قم بتعبئة التفاصيل وسيتواصل معك ممثلنا للتنسيق",
+                lblContact: "اسم المعلم / جهة التواصل *",
+                lblPhone: "رقم الهاتف *",
+                lblEmail: "البريد الإلكتروني *",
+                lblInst: "رمز المؤسسة / اسم السلطة",
+                lblLeague: "مسار الدوري *",
+                optElementary: "SCA للابتدائي (الصفوف 3-6)",
+                optUltra: "Ultra SCA للمتقدمين (الصفوف 7-9)",
+                lblLoc: "المركز المفضل *",
+                btnSubmitReg: "إرسال طلب التسجيل",
+                footerDesc: "مسابقة الروبوتات والطائرات المسيرة الدولية SCA من حوتام حاييم. نموذج استراتيجي فريد ومعتمد.",
+                footerContact: "اتصل بنا",
+                footerGafen: "ميزانية STEM - معتمد جيفين",
+                footerChat: "تواصل سريع",
+                btnWa: "محادثة مباشرة عبر واتساب",
+                copy: "© جميع الحقوق محفوظة لشركة حوتام حاييم - مسابقة SCA."
+            },
+            en: {
+                gafenBadge: "Gafen Approved (STEM)",
+                navAbout: "About",
+                navMissions: "9 Missions",
+                navLeagues: "Leagues",
+                navTimeline: "Timeline",
+                navGallery: "Gallery & Assets",
+                navFaq: "FAQ",
+                navRegisterBtn: "Register & Pay",
+                heroBadge: "International Robotics & Drone Competition by Hotem Haim",
+                heroTitle: "Smart Choice. <span class=\"text-blue-600\">Big Win.</span>",
+                heroSubtitle: "9 Smart City missions, 9 separate trophies. One strategic rule: 1 trophy per team. Breakthrough combination of ground robots & drones.",
+                heroCtaRegister: "Register & Reserve Mat (1,500 ILS)",
+                heroCtaMap: "View 9 Missions Map",
+                statTrophies: "Trophies & Awards",
+                statLocations: "Sakhnin, Haifa, PT, Beer Sheva",
+                statGafen: "STEM / Gafen Approved",
+                statLang: "Hebrew & Arabic Judging",
+                video1Title: "Watch the Competition in Action",
+                video1Sub: "Play the official promo video of the SCA Competition",
+                aboutBadge: "Educational Innovation",
+                aboutTitle: "The Advanced & Accessible Alternative for Robotics Competitions (FIRST & WRO)",
+                aboutDesc: "SCA International Smart City AI was born to provide a real solution for schools & municipalities: a prestigious competition without huge budgets.",
+                aboutPoint1Title: "Accessible Budget:",
+                aboutPoint1Desc: "Only 1,500 ILS including the physical competition mat, eligible for full STEM funding.",
+                aboutPoint2Title: "Full Tech Freedom:",
+                aboutPoint2Desc: "Work with existing equipment - LEGO SPIKE, Micro:bit, Arduino, and drones.",
+                aboutPoint3Title: "Strategic Opportunity:",
+                aboutPoint3Desc: "With 'One Trophy per Team', even younger teams can win 1st place in their mission.",
+                missionsBadge: "Strategy & Victory",
+                missionsTitle: "9 Missions & 9 Trophies",
+                missionsSub: "Each mission represents a Smart City challenge. Pick one, focus, and win!",
+                m1Level: "Easy | Safe",
+                m1Title: "1. Outer Loop",
+                m1Desc: "Fast line following around the Smart City. A classic mission for every robot.",
+                m5Level: "Medium | Complex",
+                m5Title: "5. Autonomous Transit",
+                m5Desc: "Traffic sign recognition, dynamic obstacle avoidance, and parking.",
+                m8Level: "Ultra SCA | Drones",
+                m8Title: "8. Combined Transport",
+                m8Desc: "Programming a drone and ground robot working together to transport emergency gear.",
+                btnReserveMat: "Reserve Your Mat Now",
+                leaguesTitle: "Competition Leagues",
+                leaguesSub: "Tailored by age groups and technical complexity",
+                league1Age: "Grades 3 - 6",
+                league1Name: "SCA Elementary",
+                league1Desc: "Designed for elementary schools. Focuses on problem solving, coding, and teamwork.",
+                league1Btn: "Register for Elementary League",
+                league2Age: "Grades 7 - 9",
+                league2Name: "Ultra SCA Advanced",
+                league2Desc: "First of its kind: ground robots and autonomous drones competing on the same field.",
+                league2Btn: "Register for Ultra SCA",
+                timelineTitle: "Locations & Timeline",
+                timelineSub: "Final events will take place in the second half of May 2026",
+                loc1: "Sakhnin",
+                loc2: "Petah Tikva",
+                loc3: "Haifa",
+                loc4: "Beer Sheva",
+                may2026: "May 2026",
+                judgeBi: "Judging: Hebrew / Arabic",
+                judgeHe: "Judging: Hebrew",
+                video2Title: "Highlights & Inspiration",
+                video2Sub: "Watch the excitement and success of participating teams",
+                galleryBadge: "Official Gallery & Assets",
+                galleryTitle: "Photos & Brand Download",
+                downloadTitle: "Download Official Brand Kit",
+                downloadSub: "Download official logos for school presentations and publications.",
+                btnDownloadLogo: "Download SCA Logo",
+                btnDownloadFavicon: "Download Favicon Symbol",
+                faqTitle: "Frequently Asked Questions",
+                q1: "How to pay using Gafen / Ministry budget?",
+                a1: "SCA Competition is approved in Gafen under the STEM program. Our team will assist with purchase orders.",
+                q2: "What does the 1,500 ILS fee cover?",
+                a2: "It covers team registration, physical mat delivery, and full learning portal access.",
+                regTitle: "Registration & Mat Reservation",
+                regSub: "Fill in the details and our representative will get back to you",
+                lblContact: "Contact Name / Teacher *",
+                lblPhone: "Phone Number *",
+                lblEmail: "Email *",
+                lblInst: "School ID / Municipality",
+                lblLeague: "League Track *",
+                optElementary: "SCA Elementary (Grades 3-6)",
+                optUltra: "Ultra SCA Advanced (Grades 7-9)",
+                lblLoc: "Preferred Location *",
+                btnSubmitReg: "Submit Registration",
+                footerDesc: "SCA International Smart City AI Competition by Hotem Haim Ltd.",
+                footerContact: "Contact Us",
+                footerGafen: "STEM Budget Approved",
+                footerChat: "Quick Chat",
+                btnWa: "Direct WhatsApp Chat",
+                copy: "© All rights reserved to Hotem Haim Ltd - SCA Competition."
+            }
+        };
+
+        const langLabels = {
+            he: "עברית",
+            ar: "عربي",
+            en: "English"
+        };
+
+        function toggleLangDropdown(event) {
+            if (event) event.stopPropagation();
+            document.getElementById('lang-dropdown').classList.toggle('hidden');
+        }
+
+        function closeLangDropdown(event) {
+            const dropdown = document.getElementById('lang-dropdown');
+            if (dropdown && !dropdown.classList.contains('hidden')) {
+                dropdown.classList.add('hidden');
+            }
+        }
+
+        function setLanguage(lang) {
+            const html = document.documentElement;
+            
+            // Text Direction
+            if (lang === 'he' || lang === 'ar') {
+                html.dir = 'rtl';
+            } else {
+                html.dir = 'ltr';
+            }
+            html.lang = lang;
+
+            // Update Selected Language Label in Dropdown
+            const currentLangText = document.getElementById('current-lang-text');
+            if (currentLangText && langLabels[lang]) {
+                currentLangText.innerText = langLabels[lang];
+            }
+
+            // Close Dropdown
+            const dropdown = document.getElementById('lang-dropdown');
+            if (dropdown) dropdown.classList.add('hidden');
+
+            // Update Text Content
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.innerHTML = i18n[lang][key];
+                }
+            });
+
+            // Swap First Promo Video for Arabic
+            const promoIframe = document.getElementById('promo-iframe');
+            if (promoIframe) {
+                if (lang === 'ar') {
+                    promoIframe.src = 'https://www.youtube.com/embed/4rxW-6H1Cw8?enablejsapi=1';
+                } else {
+                    promoIframe.src = 'https://www.youtube.com/embed/FbsEU789Le4?enablejsapi=1';
+                }
+            }
+        }
+
         function toggleMobileMenu() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         }
@@ -509,33 +886,34 @@
             icon.classList.toggle('rotate-180');
         }
 
-        function setLanguage(lang) {
-            if (lang === 'he' || lang === 'ar') {
-                document.documentElement.dir = 'rtl';
-                document.documentElement.lang = lang;
-            } else {
-                document.documentElement.dir = 'ltr';
-                document.documentElement.lang = 'en';
-            }
-        }
-
-        // Scroll-triggered expanding video observer
+        // Auto Language Detection & Intersection Observer Setup
         document.addEventListener('DOMContentLoaded', function() {
-            const videoContainer = document.getElementById('video-container');
-            if (videoContainer && 'IntersectionObserver' in window) {
+            // Detect System Language
+            const userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            if (userLang.startsWith('ar')) {
+                setLanguage('ar');
+            } else if (userLang.startsWith('en')) {
+                setLanguage('en');
+            } else {
+                setLanguage('he');
+            }
+
+            // Scroll-triggered Expanding Videos Observer
+            const videoContainers = document.querySelectorAll('.video-container');
+            if (videoContainers.length > 0 && 'IntersectionObserver' in window) {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
-                        if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
-                            videoContainer.classList.remove('max-w-2xl', 'sm:max-w-3xl', 'scale-95', 'opacity-80');
-                            videoContainer.classList.add('max-w-7xl', 'scale-100', 'opacity-100');
+                        if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
+                            entry.target.classList.remove('max-w-2xl', 'sm:max-w-3xl', 'scale-95', 'opacity-80');
+                            entry.target.classList.add('max-w-7xl', 'scale-100', 'opacity-100');
                         } else {
-                            videoContainer.classList.remove('max-w-7xl', 'scale-100', 'opacity-100');
-                            videoContainer.classList.add('max-w-2xl', 'sm:max-w-3xl', 'scale-95', 'opacity-80');
+                            entry.target.classList.remove('max-w-7xl', 'scale-100', 'opacity-100');
+                            entry.target.classList.add('max-w-2xl', 'sm:max-w-3xl', 'scale-95', 'opacity-80');
                         }
                     });
-                }, { threshold: [0.1, 0.3, 0.6] });
+                }, { threshold: [0.1, 0.25, 0.5] });
 
-                observer.observe(videoContainer);
+                videoContainers.forEach(container => observer.observe(container));
             }
         });
     </script>
