@@ -56,6 +56,14 @@
         .video-container {
             transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        /* Fade transition for the mega bots carousel */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
     </style>
 </head>
 <body class="bg-white text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white" onclick="closeLangDropdown(event)">
@@ -139,7 +147,7 @@
     <!-- Hero Section with Clear Visible Background Video -->
     <section id="hero" class="relative bg-slate-950 text-white pt-20 pb-28 px-4 sm:px-6 lg:px-8 text-center overflow-hidden min-h-[85vh] flex items-center justify-center">
         
-        <!-- Clear Background Video -->
+        <!-- Clear Background Video (Opacity Increased to 80%) -->
         <div class="absolute inset-0 overflow-hidden z-0 pointer-events-none">
             <iframe class="w-full h-full scale-135 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover opacity-80" 
                     src="https://www.youtube.com/embed/0x5mf8BUJZY?autoplay=1&mute=1&loop=1&playlist=0x5mf8BUJZY&controls=0&showinfo=0&autohide=1&modestbranding=1" 
@@ -158,6 +166,7 @@
                     <span data-i18n="heroBadge">תחרות הרובוטיקה והרחפנים הבינלאומית מבית חותם חיים</span>
                 </div>
 
+                <!-- Prominent Regulations Link Button in Hero -->
                 <a href="https://docs.google.com/document/d/1zQG_xYCCL6bhyvYm327tR5M6qd081eSjViqpXdrNssE/edit?usp=sharing" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-400/20 hover:bg-amber-400/30 backdrop-blur border border-amber-300/50 text-amber-300 hover:text-amber-200 text-sm font-bold shadow-xl transition">
                     <i class="fas fa-file-contract"></i>
                     <span data-i18n="heroRulesBtn">תקנון התחרות הרשמי</span>
@@ -307,6 +316,63 @@
                     <span data-i18n="btnReserveMat">שריינו ערכת משטח עכשיו</span>
                     <i class="fas fa-arrow-left"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEGA BOTS Kit Section with Dynamic Carousel -->
+    <section id="megabots" class="py-20 bg-slate-950 text-white border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Carousel Side -->
+                <div class="order-2 lg:order-1 relative h-full">
+                    <div class="aspect-square w-full bg-white rounded-3xl border border-slate-700 flex flex-col overflow-hidden shadow-2xl relative z-10">
+                        <div class="flex-grow flex items-center justify-center bg-white p-4 relative">
+                            <!-- Changing Image -->
+                            <img id="mega-carousel-img" src="https://i.postimg.cc/MXFGgBQN/Screenshot-2026-08-23-170006.png" alt="MEGA BOTS" class="w-full h-full object-contain max-h-[350px]">
+                        </div>
+                        <!-- Dynamic Marketing Text Overlay -->
+                        <div class="bg-slate-900/95 p-5 text-center border-t border-slate-800">
+                            <p id="mega-carousel-text" class="text-amber-400 font-bold text-lg leading-snug drop-shadow-md" data-i18n="megaSlide1">מעל 16 מודלים חכמים להרכבה בערכה אחת</p>
+                        </div>
+                    </div>
+                    <!-- Glow effects -->
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-600/30 rounded-full blur-2xl z-0"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-amber-400/20 rounded-full blur-2xl z-0"></div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="order-1 lg:order-2">
+                    <span class="inline-block py-1.5 px-3 rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/20 text-xs font-bold mb-4" data-i18n="megaBadge">הערכה המומלצת והרשמית</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-6 leading-tight" data-i18n="megaTitle">
+                        תכנון, בנייה וניצחון עם <span class="text-amber-400">MEGA BOTS</span>
+                    </h2>
+                    <p class="text-slate-300 text-lg leading-relaxed mb-8" data-i18n="megaDesc">
+                        כדי להגיע לביצועים המקסימליים ב-9 משימות העיר החכמה, אנו ממליצים על ערכת MEGA BOTS מבית רובוטיקס. הערכה המושלמת המשלבת מנועים חכמים, חיישנים מדויקים ומבנה מודולרי שמותאם במיוחד לאתגרי התחרות.
+                    </p>
+                    <ul class="space-y-4 mb-8 text-base">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-microchip text-blue-400 text-lg"></i>
+                            <span class="text-slate-200" data-i18n="megaPoint1">מעל 100 חלקי מבנה ועשרות רובוטים שונים בערכה אחת</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-tachometer-alt text-blue-400 text-lg"></i>
+                            <span class="text-slate-200" data-i18n="megaPoint2">כוללת חיישני אולטרסוני, מעקב קו, אור, קול ומנועים עוצמתיים</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-code text-blue-400 text-lg"></i>
+                            <span class="text-slate-200" data-i18n="megaPoint3">תמיכה מלאה בתכנות ויזואלי (MakeCode) ובתכנות טקסטואלי (Python)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-puzzle-piece text-blue-400 text-lg"></i>
+                            <span class="text-slate-200" data-i18n="megaPoint4">תאימות של 100% לחלקי בנייה נפוצים ומערכת מודולרית מתקדמת</span>
+                        </li>
+                    </ul>
+                    <a href="#register" class="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span data-i18n="megaBtn">הוסיפו את הערכה להרשמה</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -490,52 +556,6 @@
         </div>
     </section>
 
-    <!-- MEGA BOTS Kit Section -->
-    <section id="megabots" class="py-20 bg-slate-950 text-white border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 relative">
-                    <div class="aspect-square bg-slate-900 rounded-3xl border border-slate-700 flex items-center justify-center p-8 shadow-2xl relative z-10">
-                        <div class="text-center">
-                            <i class="fas fa-robot text-6xl text-amber-400 mb-6 drop-shadow-md"></i>
-                            <h3 class="text-4xl font-black text-white tracking-widest drop-shadow-md">MEGA BOTS</h3>
-                            <p class="text-slate-400 mt-2 font-semibold tracking-wider" data-i18n="megaKitLabel">הערכה הרשמית</p>
-                        </div>
-                    </div>
-                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-600/30 rounded-full blur-2xl z-0"></div>
-                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-amber-400/20 rounded-full blur-2xl z-0"></div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <span class="inline-block py-1.5 px-3 rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/20 text-xs font-bold mb-4" data-i18n="megaBadge">הערכה המומלצת והרשמית</span>
-                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-6 leading-tight" data-i18n="megaTitle">
-                        תכנון, בנייה וניצחון עם <span class="text-amber-400">MEGA BOTS</span>
-                    </h2>
-                    <p class="text-slate-300 text-lg leading-relaxed mb-8" data-i18n="megaDesc">
-                        כדי להגיע לביצועים המקסימליים ב-9 משימות העיר החכמה, אנו ממליצים על ערכת MEGA BOTS מבית רובוטיקס. הערכה המושלמת המשלבת מנועים חכמים, חיישנים מדויקים ומבנה מודולרי שמותאם במיוחד לאתגרי התחרות.
-                    </p>
-                    <ul class="space-y-4 mb-8 text-base">
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-400 text-lg"></i>
-                            <span class="text-slate-200" data-i18n="megaPoint1">תאימות מלאה לכלל משימות התחרות בעיר החכמה</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-400 text-lg"></i>
-                            <span class="text-slate-200" data-i18n="megaPoint2">כוללת חיישני צבע, חיישני מרחק, ומנועים חזקים</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-400 text-lg"></i>
-                            <span class="text-slate-200" data-i18n="megaPoint3">ניתן לרכישה כחלק מהצטיידות גפ"ן מוסדית מרוכזת</span>
-                        </li>
-                    </ul>
-                    <a href="#register" class="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span data-i18n="megaBtn">הוסיפו את הערכה להרשמה</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Registration Section -->
     <section id="register" class="py-20 bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -590,7 +610,7 @@
                 <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl">
                     <label class="flex items-center gap-3 cursor-pointer">
                         <input type="checkbox" name="interest_megabots" class="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500">
-                        <span class="font-bold text-slate-800 text-sm" data-i18n="lblMegaCheck">אנו מעוניינים להוסיף להזמנה את ערכת MEGA BOTS</span>
+                        <span class="font-bold text-slate-800 text-sm" data-i18n="lblMegaCheck">אנו מעוניינים להוסיף להזמנה את ערכת MEGA BOTS המומלצת</span>
                     </label>
                 </div>
 
@@ -716,14 +736,24 @@
                 a2: "התשלום מכסה את השתתפות הנבחרת, קבלת משטח העיר החכמה הפיזי לאימונים בבית הספר, וגישה מלאה לחומרי העזר.",
                 q3: "איזו משימה כדאי לנו לעשות?",
                 a3: "כל קבוצה צריכה לשאוף להצליח את המשימה עם המספר הגבוה ביותר, אבל לפעמים שווה ללכת על משימה בטוחה, עדיף ציפור אחת ביד מאשר שתיים על העץ, צפו בסרטון הסבר:",
-                megaKitLabel: "הערכה הרשמית",
                 megaBadge: "הערכה המומלצת והרשמית",
                 megaTitle: "תכנון, בנייה וניצחון עם <span class=\"text-amber-400\">MEGA BOTS</span>",
                 megaDesc: "כדי להגיע לביצועים המקסימליים ב-9 משימות העיר החכמה, אנו ממליצים על ערכת MEGA BOTS מבית רובוטיקס. הערכה המושלמת המשלבת מנועים חכמים, חיישנים מדויקים ומבנה מודולרי שמותאם במיוחד לאתגרי התחרות.",
-                megaPoint1: "תאימות מלאה לכלל משימות התחרות בעיר החכמה",
-                megaPoint2: "כוללת חיישני צבע, חיישני מרחק, ומנועים חזקים",
-                megaPoint3: "ניתן לרכישה כחלק מהצטיידות גפ\"ן מוסדית מרוכזת",
+                megaPoint1: "מעל 100 חלקי מבנה ועשרות רובוטים שונים בערכה אחת",
+                megaPoint2: "כוללת חיישני אולטרסוני, מעקב קו, אור, קול ומנועים עוצמתיים",
+                megaPoint3: "תמיכה מלאה בתכנות ויזואלי (MakeCode) ובתכנות טקסטואלי (Python)",
+                megaPoint4: "תאימות של 100% לחלקי בנייה נפוצים ומערכת מודולרית מתקדמת",
                 megaBtn: "הוסיפו את הערכה להרשמה",
+                
+                // Carousel Dynamic Texts (Hebrew)
+                c_text_0: "מעל 16 רובוטים חכמים להרכבה בערכה אחת",
+                c_text_1: "שילוב מושלם של מכניקה, אלקטרוניקה וקוד",
+                c_text_2: "מנועים עוצמתיים ושלדה חזקה לעמידות מקסימלית",
+                c_text_3: "פלטפורמה חכמה לאינסוף אפשרויות פיתוח",
+                c_text_4: "חיישני מעקב קו לביצועים מדויקים בעיר החכמה",
+                c_text_5: "חיבור פשוט ונוח ללוחות עיבוד מתקדמים",
+                c_text_6: "זיהוי מכשולים אוטומטי בעזרת חיישן אולטרסוני",
+                
                 regTitle: "הרשמה ושריון משטח",
                 regSub: "מלאו את הפרטים ונציג חותם חיים יחזור אליכם לתיאום",
                 lblContact: "שם איש קשר / מורה *",
@@ -734,7 +764,7 @@
                 optElementary: "SCA ליסודי (כיתות ג'-ו')",
                 optUltra: "Ultra SCA למתקדמים (כיתות ז'-ט')",
                 lblLoc: "מוקד מועדף *",
-                lblMegaCheck: "אנו מעוניינים להוסיף להזמנה את ערכת MEGA BOTS",
+                lblMegaCheck: "אנו מעוניינים להוסיף להזמנה את ערכת MEGA BOTS המומלצת",
                 btnSubmitReg: "שליחת הרשמה לשריון משטח",
                 footerDesc: "תחרות הרובוטיקה והרחפנים הבינלאומית SCA מבית חותם חיים בע\"מ. מודל אסטרטגי יחידני ומאושר גפ\"ן.",
                 footerContact: "צור קשר",
@@ -821,14 +851,24 @@
                 a2: "يغطي المبلغ مشاركة الفريق، الحصول على ميدان التدريب الفعلي، والوصول الكامل للمواد التعليمية.",
                 q3: "أي مهمة ينبغي علينا اختيارها؟",
                 a3: "يجب على كل فريق السعي للنجاح في المهمة ذات الرقم الأعلى، ولكن في بعض الأحيان يكون من الأفضل اختيار مهمة آمنة (عصفور في اليد خير من عشرة على الشجرة). شاهد فيديو الشرح:",
-                megaKitLabel: "المجموعة الرسمية",
                 megaBadge: "المجموعة الرسمية والموصى بها",
                 megaTitle: "التصميم والبناء والفوز مع <span class=\"text-amber-400\">MEGA BOTS</span>",
-                megaDesc: "لتحقيق أقصى أداء في مهام المدينة الذكية، نوصي بمجموعة MEGA BOTS. المجموعة المثالية التي تجمع بين المحركات الذكية وأجهزة الاستشعار الدقيقة.",
-                megaPoint1: "توافق تام مع جميع مهام المسابقة",
-                megaPoint2: "تتضمن مستشعرات الألوان والمسافة ومحركات قوية",
-                megaPoint3: "يمكن شراؤها كجزء من تجهيزات المؤسسة عبر جيفين",
+                megaDesc: "لتحقيق أقصى أداء في مهام المدينة الذكية، نوصي بمجموعة MEGA BOTS. المجموعة المثالية التي تجمع بين المحركات الذكية وأجهزة الاستشعار الدقيقة لنجاح مضمون.",
+                megaPoint1: "أكثر من 100 قطعة بناء وعشرات الروبوتات المختلفة في مجموعة واحدة",
+                megaPoint2: "تتضمن مستشعرات مسافة وتتبع خط وإضاءة ومحركات قوية",
+                megaPoint3: "دعم كامل للبرمجة المرئية (MakeCode) والنصية (Python)",
+                megaPoint4: "توافق 100٪ مع أجزاء البناء الشائعة ونظام معياري متقدم",
                 megaBtn: "أضف المجموعة إلى التسجيل",
+                
+                // Carousel Dynamic Texts (Arabic)
+                c_text_0: "أكثر من 16 روبوتًا ذكيًا للتجميع في مجموعة واحدة",
+                c_text_1: "مزيج مثالي من الميكانيكا والإلكترونيات والبرمجة",
+                c_text_2: "محركات قوية وهيكل متين لأقصى قدر من التحمل",
+                c_text_3: "منصة ذكية لخيارات تطوير لا حصر لها",
+                c_text_4: "مستشعرات تتبع الخط لأداء دقيق في المدينة الذكية",
+                c_text_5: "اتصال بسيط ومريح بلوحات المعالجة المتقدمة",
+                c_text_6: "اكتشاف تلقائي للعقبات باستخدام مستشعر الموجات فوق الصوتية",
+
                 regTitle: "التسجيل وحجز الميدان",
                 regSub: "قم بتعبئة التفاصيل وسيتواصل معك ممثلنا للتنسيق",
                 lblContact: "اسم المعلم / جهة التواصل *",
@@ -839,7 +879,7 @@
                 optElementary: "SCA للابتدائي (الصفوف 3-6)",
                 optUltra: "Ultra SCA للمتقدمين (الصفوف 7-9)",
                 lblLoc: "المركز المفضل *",
-                lblMegaCheck: "نحن مهتمون بإضافة مجموعة MEGA BOTS إلى الطلب",
+                lblMegaCheck: "نحن مهتمون بإضافة مجموعة MEGA BOTS الموصى بها إلى الطلب",
                 btnSubmitReg: "إرسال طلب التسجيل",
                 footerDesc: "مسابقة الروبوتات والطائرات المسيرة الدولية SCA من حوتام حاييم. نموذج استراتيجي فريد ومعتمد.",
                 footerContact: "اتصل بنا",
@@ -926,14 +966,24 @@
                 a2: "It covers team registration, physical mat delivery, and full learning portal access.",
                 q3: "Which mission should we choose?",
                 a3: "Every team should aim for the highest-numbered mission, but sometimes choosing a safe option is wiser—a bird in the hand is worth two in the bush. Watch the explanation video:",
-                megaKitLabel: "Official Kit",
                 megaBadge: "Official & Recommended Kit",
                 megaTitle: "Design, Build & Win with <span class=\"text-amber-400\">MEGA BOTS</span>",
-                megaDesc: "To achieve maximum performance in the 9 Smart City missions, we recommend the MEGA BOTS kit. The perfect kit featuring smart motors, precise sensors, and modular design.",
-                megaPoint1: "Fully compatible with all competition missions",
-                megaPoint2: "Includes color & distance sensors and strong motors",
-                megaPoint3: "Available for purchase via institutional Gafen funding",
+                megaDesc: "To achieve maximum performance in the 9 Smart City missions, we highly recommend the MEGA BOTS kit. The perfect kit featuring smart motors and precise sensors.",
+                megaPoint1: "Over 100 structural parts and dozens of different robots in one kit",
+                megaPoint2: "Includes ultrasonic, line tracking, light, sound sensors, and powerful motors",
+                megaPoint3: "Full support for visual coding (MakeCode) and textual coding (Python)",
+                megaPoint4: "100% compatibility with common building blocks and an advanced modular system",
                 megaBtn: "Add Kit to Registration",
+
+                // Carousel Dynamic Texts (English)
+                c_text_0: "Over 16 smart robots to build in one kit",
+                c_text_1: "Perfect combination of mechanics, electronics, and code",
+                c_text_2: "Powerful motors and robust chassis for maximum durability",
+                c_text_3: "Smart platform for endless development possibilities",
+                c_text_4: "Line tracking sensors for precise performance",
+                c_text_5: "Simple and easy connection to advanced processing boards",
+                c_text_6: "Automatic obstacle avoidance with ultrasonic sensor",
+
                 regTitle: "Registration & Mat Reservation",
                 regSub: "Fill in the details and our representative will get back to you",
                 lblContact: "Contact Name / Teacher *",
@@ -944,7 +994,7 @@
                 optElementary: "SCA Elementary (Grades 3-6)",
                 optUltra: "Ultra SCA Advanced (Grades 7-9)",
                 lblLoc: "Preferred Location *",
-                lblMegaCheck: "We are interested in adding the MEGA BOTS kit to our order",
+                lblMegaCheck: "We are interested in adding the recommended MEGA BOTS kit",
                 btnSubmitReg: "Submit Registration",
                 footerDesc: "SCA International Smart City AI Competition by Hotem Haim Ltd.",
                 footerContact: "Contact Us",
@@ -961,6 +1011,59 @@
             en: "English"
         };
 
+        // --- MEGA BOTS Carousel Data & Logic ---
+        const megaSlidesData = [
+            { src: 'https://i.postimg.cc/MXFGgBQN/Screenshot-2026-08-23-170006.png', textKey: 'c_text_0' },
+            { src: 'https://i.postimg.cc/DmMzRGXR/Screenshot-2026-08-23-204759.png', textKey: 'c_text_1' },
+            { src: 'https://i.postimg.cc/G95p6DyS/Screenshot-2026-08-24-000617.png', textKey: 'c_text_2' },
+            { src: 'https://i.postimg.cc/8s0Cxv6X/Screenshot-2026-08-24-000713.png', textKey: 'c_text_3' },
+            { src: 'https://i.postimg.cc/c6bJP3nT/Screenshot-2026-08-24-001245.png', textKey: 'c_text_4' },
+            { src: 'https://i.postimg.cc/z3cf4hg7/Screenshot-2026-08-24-001414.png', textKey: 'c_text_5' },
+            { src: 'https://i.postimg.cc/SjvKH9MG/Screenshot-2026-08-24-001733.png', textKey: 'c_text_6' },
+            { src: 'https://i.postimg.cc/nMPLNmDY/Screenshot-2026-08-24-001947.png', textKey: 'c_text_0' },
+            { src: 'https://i.postimg.cc/3WRRL1dL/Screenshot-2026-08-24-005552.png', textKey: 'c_text_1' },
+            { src: 'https://i.postimg.cc/LhXXyDnx/Screenshot-2026-08-24-011943.png', textKey: 'c_text_2' },
+            { src: 'https://i.postimg.cc/Z0RRfHC7/Screenshot-2026-08-24-011954.png', textKey: 'c_text_3' },
+            { src: 'https://i.postimg.cc/dD11W6LG/Screenshot-2026-08-24-012021.png', textKey: 'c_text_4' },
+            { src: 'https://i.postimg.cc/qgRRmwzc/Screenshot-2026-08-24-012034.png', textKey: 'c_text_5' },
+            { src: 'https://i.postimg.cc/Z0RRfHCp/Screenshot-2026-08-24-012051.png', textKey: 'c_text_6' },
+            { src: 'https://i.postimg.cc/rzmmhjKC/Screenshot-2026-09-02-094241.png', textKey: 'c_text_0' }
+        ];
+
+        let currentMegaSlide = 0;
+        let currentAppLang = 'he';
+
+        function changeMegaSlide() {
+            const imgElement = document.getElementById('mega-carousel-img');
+            const textElement = document.getElementById('mega-carousel-text');
+            
+            if(!imgElement || !textElement) return;
+
+            // Remove animation class
+            imgElement.classList.remove('fade-in');
+            textElement.classList.remove('fade-in');
+            
+            // Advance slide
+            currentMegaSlide = (currentMegaSlide + 1) % megaSlidesData.length;
+            
+            // Trigger reflow to restart animation
+            void imgElement.offsetWidth;
+            
+            // Set new data
+            const slideData = megaSlidesData[currentMegaSlide];
+            imgElement.src = slideData.src;
+            
+            // Update text based on current language
+            const textKey = slideData.textKey;
+            textElement.innerHTML = i18n[currentAppLang][textKey];
+            // Also store the data key so setLanguage can update it if language changes while looking
+            textElement.setAttribute('data-i18n', textKey);
+
+            // Add animation class back
+            imgElement.classList.add('fade-in');
+            textElement.classList.add('fade-in');
+        }
+
         function toggleLangDropdown(event) {
             if (event) event.stopPropagation();
             document.getElementById('lang-dropdown').classList.toggle('hidden');
@@ -975,6 +1078,7 @@
 
         function setLanguage(lang) {
             const html = document.documentElement;
+            currentAppLang = lang;
             
             // Text Direction
             if (lang === 'he' || lang === 'ar') {
@@ -994,7 +1098,7 @@
             const dropdown = document.getElementById('lang-dropdown');
             if (dropdown) dropdown.classList.add('hidden');
 
-            // Update Text Content
+            // Update All static translated elements
             const elements = document.querySelectorAll('[data-i18n]');
             elements.forEach(el => {
                 const key = el.getAttribute('data-i18n');
@@ -1025,9 +1129,13 @@
             icon.classList.toggle('rotate-180');
         }
 
-        // Auto Language Detection & Intersection Observer Setup
+        // Auto Language Detection, Video Observer & Carousel Start
         document.addEventListener('DOMContentLoaded', function() {
-            // Detect System Language
+            
+            // 1. Start Mega Bots Carousel (changes every 3.5 seconds)
+            setInterval(changeMegaSlide, 3500);
+
+            // 2. Detect System Language
             const userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
             if (userLang.startsWith('ar')) {
                 setLanguage('ar');
@@ -1037,7 +1145,7 @@
                 setLanguage('he');
             }
 
-            // Scroll-triggered Expanding Videos Observer
+            // 3. Scroll-triggered Expanding Videos Observer
             const videoContainers = document.querySelectorAll('.video-container');
             if (videoContainers.length > 0 && 'IntersectionObserver' in window) {
                 const observer = new IntersectionObserver((entries) => {
